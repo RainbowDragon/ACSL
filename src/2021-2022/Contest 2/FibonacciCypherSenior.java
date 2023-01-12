@@ -96,9 +96,7 @@ public class FibonacciCypherSenior {
                 System.out.println("Test Case " + i + ": Passed!");
             }
             else {
-                // System.out.println("Test Case " + i + ": Failed!");
-                System.out.println(result);
-                System.out.println(output[i]);
+                System.out.println("Test Case " + i + ": Failed!");
             }
         }
     }
