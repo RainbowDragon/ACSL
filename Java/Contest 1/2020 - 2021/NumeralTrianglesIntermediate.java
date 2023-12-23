@@ -44,7 +44,7 @@ public class NumeralTrianglesIntermediate {
         while (octNumber > 0)
         {
             int digit = octNumber % 10;
-            number += digit*base;
+            number += digit * base;
             base *= 8;
             octNumber /= 10;
         }
