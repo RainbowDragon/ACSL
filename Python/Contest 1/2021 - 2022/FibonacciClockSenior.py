@@ -54,15 +54,15 @@ def findTime(cstr):
     return str_hour + ":" + str_minute + ":" + str_second
 
 
-testInput = ["RWGBG", "RCMGB", "BYYGR", "MRGBW", "YYYYY", "WGBGR", "CGRMY", "MMMMC", "CCCYY", "WWWWW"]
-testOutput = ["01:35:15", "03:20:40", "08:30:05", "02:10:20", "01:00:00", "05:20:10", "10:35:20", "07:26:00", "09:00:20", "00:00:00"]
+test_input = ["RWGBG", "RCMGB", "BYYGR", "MRGBW", "YYYYY", "WGBGR", "CGRMY", "MMMMC", "CCCYY", "WWWWW"]
+test_output = ["01:35:15", "03:20:40", "08:30:05", "02:10:20", "01:00:00", "05:20:10", "10:35:20", "07:26:00", "09:00:20", "00:00:00"]
 
 for i in range(10):
-    testResult = findTime(testInput[i])
+    test_result = findTime(test_input[i])
 
-    if testResult == testOutput[i]:
+    if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
     else:
         print("Test Case " + str(i) + ": Failed!")
-        print("Expected output: " + str(testOutput[i]))
-        print("Your output: " + str(testResult))
+        print("Expected output: " + str(test_output[i]))
+        print("Your output: " + str(test_result))
