@@ -1,4 +1,3 @@
-#
 # ACSL 2022-2023 - Contest 1 - Next Base - Junior Division
 #
 #
@@ -29,15 +28,15 @@ def findDigitSum(num, base, start):
     return result
 
 
-testInput = [[15, 8, 2], [20, 3, 5], [25, 5, 89], [13, 9, 1262], [45, 2, 123], [1000, 8, 8], [50, 4, 7], [75, 9, 319], [100, 6, 215], [25, 2, 3130]]
-testOutput = [65, 64, 189, 212, 170, 10948, 225, 876, 675, 135]
+test_input = [[15, 8, 2], [20, 3, 5], [25, 5, 89], [13, 9, 1262], [45, 2, 123], [1000, 8, 8], [50, 4, 7], [75, 9, 319], [100, 6, 215], [25, 2, 3130]]
+test_output = [65, 64, 189, 212, 170, 10948, 225, 876, 675, 135]
 
 for i in range(10):
-    testResult = findDigitSum(testInput[i][0], testInput[i][1], testInput[i][2])
+    test_result = findDigitSum(test_input[i][0], test_input[i][1], test_input[i][2])
 
-    if testResult == testOutput[i]:
+    if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
     else:
         print("Test Case " + str(i) + ": Failed!")
-        print("Expected output: " + str(testOutput[i]))
-        print("Your output: " + str(testResult))
+        print("Expected output: " + str(test_output[i]))
+        print("Your output: " + str(test_result))
