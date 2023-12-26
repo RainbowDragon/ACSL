@@ -47,15 +47,15 @@ def findTime(c1, c2, c3, c4, c5):
     return str_hour + ":" + str_minute
 
 
-testInput = [['R', 'W', 'G', 'B', 'G'], ['W', 'B', 'B', 'G', 'R'], ['W', 'G', 'B', 'R', 'B'], ['G', 'G', 'B', 'B', 'B'], ['W', 'R', 'G', 'G', 'G'], ['G', 'R', 'W', 'B', 'B'], ['G', 'G', 'B', 'G', 'B'], ['R', 'R', 'R', 'R', 'R'], ['G', 'G', 'G', 'G', 'G'], ['W', 'B', 'B', 'B', 'B']]
-testOutput = ["04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"]
+test_input = [['R', 'W', 'G', 'B', 'G'], ['W', 'B', 'B', 'G', 'R'], ['W', 'G', 'B', 'R', 'B'], ['G', 'G', 'B', 'B', 'B'], ['W', 'R', 'G', 'G', 'G'], ['G', 'R', 'W', 'B', 'B'], ['G', 'G', 'B', 'G', 'B'], ['R', 'R', 'R', 'R', 'R'], ['G', 'G', 'G', 'G', 'G'], ['W', 'B', 'B', 'B', 'B']]
+test_output = ["04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"]
 
 for i in range(10):
-    testResult = findTime(testInput[i][0], testInput[i][1], testInput[i][2], testInput[i][3], testInput[i][4])
+    test_result = findTime(test_input[i][0], test_input[i][1], test_input[i][2], test_input[i][3], test_input[i][4])
 
-    if testResult == testOutput[i]:
+    if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
     else:
         print("Test Case " + str(i) + ": Failed!")
-        print("Expected output: " + str(testOutput[i]))
-        print("Your output: " + str(testResult))
+        print("Expected output: " + str(test_output[i]))
+        print("Your output: " + str(test_result))
