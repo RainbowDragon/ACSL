@@ -18,14 +18,15 @@ public class NextBaseIntermediate {
      * 2. INTEGER base
      * 3. INTEGER start
      */
-    static int countLargestDigit (int num, int base, int start) {
+    static int countLargestDigit (int num, int base, long start) {
 
         int result = 0;
         int largestDigit = base - 1;
+        long startValue = getIntegerWithBase(start, base);
 
         for (int i = 0; i < num; i++)
         {
-            int number = start + i;
+            long number = startValue + i;
 
             while (number > 0) {
                 if (number % base == largestDigit) {
@@ -38,25 +39,40 @@ public class NextBaseIntermediate {
         return result;
     }
 
+    static long getIntegerWithBase (long number, int base) {
+
+        long result = 0;
+        long power = 1;
+
+        while (number > 0)
+        {
+            result += (number % 10) * power;
+            power *= base;
+            number /= 10;
+        }
+
+        return result;
+    }
+
     public static void main (String [] args) {
 
-        int[][] input = new int[10][];
-        input[0] = new int[]{15, 8, 2};
-        input[1] = new int[]{20, 3, 5};
-        input[2] = new int[]{25, 5, 89};
-        input[3] = new int[]{13, 9, 1262};
-        input[4] = new int[]{45, 2, 123};
-        input[5] = new int[]{1000, 8, 8};
-        input[6] = new int[]{50, 4, 7};
-        input[7] = new int[]{75, 9, 319};
-        input[8] = new int[]{100, 6, 215};
-        input[9] = new int[]{25, 2, 3130};
+        long[][] input = new long[10][];
+        input[0] = new long[]{15, 8, 2L};
+        input[1] = new long[]{20, 3, 12L};
+        input[2] = new long[]{25, 5, 324L};
+        input[3] = new long[]{13, 9, 1652L};
+        input[4] = new long[]{45, 2, 1111011L};
+        input[5] = new long[]{1000, 8, 10L};
+        input[6] = new long[]{50, 4, 13L};
+        input[7] = new long[]{75, 9, 384L};
+        input[8] = new long[]{100, 6, 555L};
+        input[9] = new long[]{25, 2, 110000111010L};
 
         int[] output = {2, 21, 24, 1, 170, 357, 34, 13, 31, 135};
 
         for (int i = 0; i < 10; i++)
         {
-            int result = countLargestDigit(input[i][0], input[i][1], input[i][2]);
+            int result = countLargestDigit((int)input[i][0], (int)input[i][1], input[i][2]);
 
             if (output[i] == result) {
                 System.out.println("Test Case " + i + ": Passed!");
