@@ -15,10 +15,11 @@
 def countLargestDigit(num, base, start):
 
     result = 0
+    start_value = int(str(start), base)
     largest_digit = base - 1
 
     for k in range(num):
-        number = start + k
+        number = start_value + k
         counter = 0
 
         while number > 0:
@@ -32,7 +33,7 @@ def countLargestDigit(num, base, start):
     return result
 
 
-test_input = [[15, 8, 2], [20, 3, 5], [25, 5, 89], [13, 9, 1262], [45, 2, 123], [1000, 8, 8], [50, 4, 7], [75, 9, 319], [100, 6, 215], [25, 2, 3130]]
+test_input = [[15, 8, 2], [20, 3, 12], [25, 5, 324], [13, 9, 1652], [45, 2, 1111011], [1000, 8, 10], [50, 4, 13], [75, 9, 384], [100, 6, 555], [25, 2, 110000111010]]
 test_output = [2, 21, 24, 1, 170, 357, 34, 13, 31, 135]
 
 for i in range(10):
