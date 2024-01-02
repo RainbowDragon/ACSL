@@ -22,7 +22,7 @@ public class NextBaseSenior {
 
         int result = 0;
         int[] counts = new int[base];
-        int startValue = getIntegerWithBase(start, base);
+        int startValue = Integer.parseInt(start, base);
 
         for (int i = 0; i < num; i++)
         {
@@ -40,29 +40,6 @@ public class NextBaseSenior {
         }
 
         return result;
-    }
-
-    static int getIntegerWithBase (String str, int base) {
-
-        int result = 0;
-
-        for (int i = 0; i < str.length(); i++)
-        {
-            int digit = getDigitValue(str.charAt(i));
-            result = result * base + digit;
-        }
-
-        return result;
-    }
-
-    static int getDigitValue (char c) {
-
-        if (c >= '0' && c <= '9') {
-            return c - '0';
-        }
-        else {
-            return c - 'A' + 10;
-        }
     }
 
     public static void main (String [] args) {
