@@ -47,7 +47,18 @@ def findTime(c1, c2, c3, c4, c5):
     return str_hour + ":" + str_minute
 
 
-test_input = [['R', 'W', 'G', 'B', 'G'], ['W', 'B', 'B', 'G', 'R'], ['W', 'G', 'B', 'R', 'B'], ['G', 'G', 'B', 'B', 'B'], ['W', 'R', 'G', 'G', 'G'], ['G', 'R', 'W', 'B', 'B'], ['G', 'G', 'B', 'G', 'B'], ['R', 'R', 'R', 'R', 'R'], ['G', 'G', 'G', 'G', 'G'], ['W', 'B', 'B', 'B', 'B']]
+test_input = [[0] * 5] * 10
+test_input[0] = ['R', 'W', 'G', 'B', 'G']
+test_input[1] = ['W', 'B', 'B', 'G', 'R']
+test_input[2] = ['W', 'G', 'B', 'R', 'B']
+test_input[3] = ['G', 'G', 'B', 'B', 'B']
+test_input[4] = ['W', 'R', 'G', 'G', 'G']
+test_input[5] = ['G', 'R', 'W', 'B', 'B']
+test_input[6] = ['G', 'G', 'B', 'G', 'B']
+test_input[7] = ['R', 'R', 'R', 'R', 'R']
+test_input[8] = ['G', 'G', 'G', 'G', 'G']
+test_input[9] = ['W', 'B', 'B', 'B', 'B']
+
 test_output = ["04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"]
 
 for i in range(10):
