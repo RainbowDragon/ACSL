@@ -65,4 +65,3 @@ for i in range(10):
         print("Test Case " + str(i) + ": Failed!")
         print("Expected output: " + str(test_output[i]))
         print("Your output: " + str(test_result))
-
