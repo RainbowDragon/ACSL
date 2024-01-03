@@ -27,6 +27,7 @@ def sumOfLastRow(s, d, r):
 
     return result
 
+
 def oct2decimal(oct_number):
 
     number = 0
@@ -39,6 +40,7 @@ def oct2decimal(oct_number):
         oct_number //= 10
 
     return number
+
 
 def sumOfOctDigit(number):
 
