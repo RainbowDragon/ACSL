@@ -41,7 +41,7 @@ def findTime(c1, c2, c3, c4, c5):
     return str_hour + ":" + str_minute
 
 
-test_input = [[0] * 5] * 10
+test_input = [[''] * 5] * 10
 test_input[0] = ['R', 'W', 'G', 'B', 'G']
 test_input[1] = ['W', 'B', 'B', 'G', 'R']
 test_input[2] = ['B', 'G', 'B', 'B', 'R']
