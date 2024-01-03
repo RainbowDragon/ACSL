@@ -40,7 +40,18 @@ def transformNumber(num, pos, delta):
     return result
 
 
-test_input = [[124987, 2, 3], [540670, 3, 9], [7145042, 2, 8], [124987, 2, 523], [4386709, 1, 2], [4318762, 4, 3], [72431685, 1, 7], [123456789, 7, 8], [9876543210, 10, 25], [314159265358, 8, 428]]
+test_input = [[0] * 3] * 10
+test_input[0] = [124987, 2, 3]
+test_input[1] = [540670, 3, 9]
+test_input[2] = [7145042, 2, 8]
+test_input[3] = [124987, 2, 523]
+test_input[4] = [4386709, 1, 2]
+test_input[5] = [4318762, 4, 3]
+test_input[6] = [72431685, 1, 7]
+test_input[7] = [123456789, 7, 8]
+test_input[8] = [9876543210, 10, 25]
+test_input[9] = [314159265358, 8, 428]
+
 test_output = [124950, 540300, 7145020, 124950, 4386707, 4315000, 72431682, 121000000, 1000000000, 314140000000]
 
 for i in range(10):
@@ -52,3 +63,4 @@ for i in range(10):
         print("Test Case " + str(i) + ": Failed!")
         print("Expected output: " + str(test_output[i]))
         print("Your output: " + str(test_result))
+
