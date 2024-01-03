@@ -28,6 +28,7 @@ def sumOfLastRow(s, d, r):
 
     return result
 
+
 def transformToSingleDigit(number):
 
     while number > 9:
