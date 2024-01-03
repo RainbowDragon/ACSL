@@ -30,6 +30,7 @@ def sumOfLastRow(s, d, r):
 
     return hex_digits[result]
 
+
 def transformToSingleHexDigit(number):
 
     while number > 15:
@@ -44,7 +45,7 @@ def transformToSingleHexDigit(number):
     return number
 
 
-test_input = [[0] * 3] * 10
+test_input = [[""] * 3] * 10
 test_input[0] = ["A", "9", "5"]
 test_input[1] = ["ABC", "F", "4"]
 test_input[2] = ["BAD", "50", "10"]
