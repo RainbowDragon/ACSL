@@ -33,6 +33,7 @@ def transformNumber(num, pos):
 
     return result
 
+
 def countPrimeFactors(num):
 
     count = 0
