@@ -30,7 +30,18 @@ def findDigitSum(num, base, start):
     return result
 
 
-test_input = [[15, 8, 2], [20, 3, 12], [25, 5, 324], [13, 9, 1652], [45, 2, 1111011], [1000, 8, 10], [50, 4, 13], [75, 9, 384], [100, 6, 555], [25, 2, 110000111010]]
+test_input = [[0] * 3] * 10
+test_input[0] = [15, 8, 2]
+test_input[1] = [20, 3, 12]
+test_input[2] = [25, 5, 324]
+test_input[3] = [13, 9, 1652]
+test_input[4] = [45, 2, 1111011]
+test_input[5] = [1000, 8, 10]
+test_input[6] = [50, 4, 13]
+test_input[7] = [75, 9, 384]
+test_input[8] = [100, 6, 555]
+test_input[9] = [25, 2, 110000111010]
+
 test_output = [65, 64, 189, 212, 170, 10948, 225, 876, 675, 135]
 
 for i in range(10):
@@ -42,4 +53,3 @@ for i in range(10):
         print("Test Case " + str(i) + ": Failed!")
         print("Expected output: " + str(test_output[i]))
         print("Your output: " + str(test_result))
-
