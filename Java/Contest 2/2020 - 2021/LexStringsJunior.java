@@ -28,7 +28,7 @@ public class LexStringsJunior {
             }
         }
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         char lastChar = ' ';
         for (int j = 0; j < maxCount; j++)
         {
@@ -37,14 +37,14 @@ public class LexStringsJunior {
                 if (charCount[i] > j) {
                     char curChar = (char)('a' + i);
                     if (lastChar != curChar) {
-                        result += curChar;
+                        sb.append(curChar);
                         lastChar = curChar;
                     }
                 }
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static int getIndexOfChar (char c) {
