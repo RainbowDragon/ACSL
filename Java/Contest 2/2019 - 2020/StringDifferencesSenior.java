@@ -44,7 +44,7 @@ public class StringDifferencesSenior {
             for (int j = i+1; j <= s1.length(); j++)
             {
                 String sub = s1.substring(i, j);
-                if (s2.indexOf(sub) != -1) {
+                if (s2.contains(sub)) {
                     if (sub.length() > result.length()) {
                         result = sub;
                     }
@@ -59,18 +59,18 @@ public class StringDifferencesSenior {
 
     static String getUpperCaseString (String s) {
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         s = s.toUpperCase();
         for (int i = 0; i < s.length(); i++)
         {
             char c = s.charAt(i);
             if (c >= 'A' && c <= 'Z') {
-                result += c;
+                sb.append(c);
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     public static void main (String [] args) {
