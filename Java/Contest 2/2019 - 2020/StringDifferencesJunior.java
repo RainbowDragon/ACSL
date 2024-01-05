@@ -17,35 +17,35 @@ public class StringDifferencesJunior {
         s1 = deleteVowels(s1);
         s2 = deleteVowels(s2);
 
-        String n1 = "";
-        String n2 = "";
+        StringBuilder sb1 = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder();
         int len = Math.min(s1.length(), s2.length());
         for (int i = 0; i < len; i++)
         {
             if (s1.charAt(i) != s2.charAt(i)) {
-                n1 += s1.charAt(i);
-                n2 += s2.charAt(i);
+                sb1.append(s1.charAt(i));
+                sb2.append(s2.charAt(i));
             }
         }
-        s1 = n1 + s1.substring(len);
-        s2 = n2 + s2.substring(len);
+        s1 = sb1 + s1.substring(len);
+        s2 = sb2 + s2.substring(len);
 
-        n1 = "";
-        n2 = "";
+        sb1.setLength(0);
+        sb2.setLength(0);
         int l1 = s1.length();
         int l2 = s2.length();
         len = Math.min(l1, l2);
         for (int i = 1; i <= len; i++)
         {
             if (s1.charAt(l1-i) != s2.charAt(l2-i)) {
-                n1 = s1.charAt(l1-i) + n1;
-                n2 = s2.charAt(l2-i) + n2;
+                sb1.append(s1.charAt(l1-i));
+                sb2.append(s2.charAt(l2-i));
             }
         }
-        s1 = s1.substring(0, l1-len) + n1;
-        s2 = s2.substring(0, l2-len) + n2;
+        s1 = s1.substring(0, l1-len) + sb1.reverse();
+        s2 = s2.substring(0, l2-len) + sb2.reverse();
 
-        String result = "";
+        String result;
         if (s1.length() < s2.length()) {
             result = s1;
         }
@@ -61,34 +61,34 @@ public class StringDifferencesJunior {
 
     static String deleteDouble (String s) {
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         char last = ' ';
         for (int i = 0; i < s.length(); i++)
         {
             char current = s.charAt(i);
             if (last != current) {
-                result += current;
+                sb.append(current);
                 last = current;
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static String deleteVowels (String s) {
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < s.length(); i++)
         {
             char current = s.charAt(i);
             if (i == 0 || (current != 'A' && current != 'E' && current != 'I' && current != 'O' && current != 'U')) {
-                result += current;
+                sb.append(current);
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     public static void main (String [] args) {
