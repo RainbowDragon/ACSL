@@ -17,21 +17,21 @@ public class StringDifferencesIntermediate {
         {
             done = true;
 
-            String n1 = "";
-            String n2 = "";
+            StringBuilder sb1 = new StringBuilder();
+            StringBuilder sb2 = new StringBuilder();
 
             int len = Math.min(s1.length(), s2.length());
             for (int i = 0; i < len; i++) {
                 if (s1.charAt(i) != s2.charAt(i)) {
-                    n1 += s1.charAt(i);
-                    n2 += s2.charAt(i);
+                    sb1.append(s1.charAt(i));
+                    sb2.append(s2.charAt(i));
                 }
                 else {
                     done = false;
                 }
             }
-            s1 = n1 + s1.substring(len);
-            s2 = n2 + s2.substring(len);
+            s1 = sb1 + s1.substring(len);
+            s2 = sb2 + s2.substring(len);
 
             len = Math.min(s1.length(), s2.length());
             for (int i = 0; i < len; i++)
