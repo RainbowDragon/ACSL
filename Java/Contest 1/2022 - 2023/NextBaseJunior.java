@@ -29,7 +29,7 @@ public class NextBaseJunior {
             int sum = 0;
 
             while (number > 0) {
-                sum += number % base;
+                sum += (int)(number % base);
                 number /= base;
             }
 
