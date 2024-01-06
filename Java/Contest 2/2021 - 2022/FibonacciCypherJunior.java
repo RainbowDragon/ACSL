@@ -23,19 +23,19 @@ public class FibonacciCypherJunior {
 
         int[] fibonacciNumber = getFibonacciNumber(n);
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < n; i++)
         {
             int offset = (fibonacciNumber[i] + key - 'a') % 26 + 'a';
             int encoded = offset + msg.charAt(i);
-            result += encoded;
+            sb.append(encoded);
             if (i < n-1) {
-                result += " ";
+                sb.append(" ");
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static int[] getFibonacciNumber (int n) {
