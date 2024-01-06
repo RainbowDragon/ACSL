@@ -26,7 +26,7 @@ public class FibonacciCypherSenior {
 
         int[] fibonacciNumber = getFibonacciNumber(num1, num2);
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         int sign = 1;
 
         if (option == 'E') {
@@ -34,9 +34,9 @@ public class FibonacciCypherSenior {
             {
                 int offset = (fibonacciNumber[i] * sign + key - 'a' + 26) % 26 + 'a';
                 int encoded = offset * 3 + msg.charAt(i);
-                result += encoded;
+                sb.append(encoded);
                 if (i < n - 1) {
-                    result += " ";
+                    sb.append(" ");
                 }
                 sign *= -1;
             }
@@ -49,13 +49,13 @@ public class FibonacciCypherSenior {
                 int number = Integer.parseInt(st.nextToken());
                 int offset = (fibonacciNumber[index] * sign + key - 'a' + 26) % 26 + 'a';
                 char decoded = (char)(number - offset * 3);
-                result += decoded;
+                sb.append(decoded);
                 index++;
                 sign *= -1;
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static int[] getFibonacciNumber (int num1, int num2) {
