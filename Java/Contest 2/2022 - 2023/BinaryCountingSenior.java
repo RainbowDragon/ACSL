@@ -85,7 +85,7 @@ public class BinaryCountingSenior {
         char[] result = new char[8];
         Arrays.fill(result, '0');
 
-        int number = (int)c;
+        int number = c;
         int index = 7;
         while (number > 0)
         {
@@ -103,15 +103,15 @@ public class BinaryCountingSenior {
             return "0";
         }
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         while (number > 0)
         {
             int remainder = number % base;
             number /= base;
-            result = remainder + result;
+            sb.append(remainder);
         }
 
-        return result;
+        return sb.reverse().toString();
     }
 
     static String getOctalStringFromBinaryString (String binaryString) {
