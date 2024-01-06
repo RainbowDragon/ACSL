@@ -41,25 +41,24 @@ public class LexStringsIntermediate {
 
         Collections.sort(blocks);
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         lastChar = ' ';
         int maxLoop = n;
-        for (int i = 0; i < blocks.size(); i++)
+        for (Block block : blocks)
         {
-            Block cur = blocks.get(i);
-            char curChar = cur.ch;
+            char curChar = block.ch;
             if (curChar != lastChar) {
                 maxLoop = n;
             }
-            int loop = Math.min(maxLoop, cur.count);
+            int loop = Math.min(maxLoop, block.count);
             for (int j = 0; j < loop; j++) {
-                result += curChar;
+                sb.append(curChar);
             }
             lastChar = curChar;
             maxLoop -= loop;
         }
 
-        return result;
+        return sb.toString();
     }
 
     static class Block implements Comparable<Block> {
