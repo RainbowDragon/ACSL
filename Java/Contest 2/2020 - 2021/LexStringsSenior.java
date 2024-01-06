@@ -37,28 +37,28 @@ public class LexStringsSenior {
             }
         }
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         int sign = 1;
         boolean isFirst = true;
         for (int i = maxCount; i > 0; i--)
         {
-            if (blocks[i].length() > 0) {
+            if (!blocks[i].isEmpty()) {
                 if (!isFirst) {
-                    result += ',';
+                    sb.append(',');
                 }
-                result += i;
+                sb.append(i);
                 if (sign > 0) {
-                    result += blocks[i];
+                    sb.append(blocks[i]);
                 }
                 else {
-                    result += reverseString(blocks[i]);
+                    sb.append(reverseString(blocks[i]));
                 }
                 isFirst = false;
                 sign *= -1;
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static int getIndexOfChar (char c) {
@@ -80,12 +80,9 @@ public class LexStringsSenior {
 
     static String reverseString (String str) {
 
-        String result = "";
-        for (int i = str.length()-1; i >= 0; i--)
-        {
-            result += str.charAt(i);
-        }
-        return result;
+        StringBuilder sb = new StringBuilder(str);
+
+        return sb.reverse().toString();
     }
 
     public static void main (String [] args) {
