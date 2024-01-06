@@ -25,19 +25,19 @@ public class FibonacciCypherIntermediate {
 
         int[] fibonacciNumber = getFibonacciNumber(num1, num2);
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < n; i++)
         {
             int offset = (fibonacciNumber[i % 20] + key - 'a') % 26 + 'a';
             int encoded = offset * 3 + msg.charAt(i);
-            result += encoded;
+            sb.append(encoded);
             if (i < n-1) {
-                result += " ";
+                sb.append(" ");
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static int[] getFibonacciNumber (int num1, int num2) {
