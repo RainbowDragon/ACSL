@@ -14,9 +14,9 @@ public class MultipleArraysJunior {
      *
      * The function is expected to return an INTEGER.
      * The function accepts following parameters:
-     *  1. STRING a1
-     *  2. STRING a2
-     *  3. STRING a3
+     *  1. STRING list1
+     *  2. STRING list2
+     *  3. STRING list3
      */
     static int sumOfLargest (String list1, String list2, String list3) {
 
