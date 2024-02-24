@@ -69,7 +69,7 @@ public class MultipleArraysSenior {
                 }
             }
             Collections.sort(numberList);
-            int maxNumber = numberList.get(numberList.size()-1);
+            int maxNumber = numberList.getLast();
 
             boolean found = false;
             for (int k = 0; k < 8; k++)
@@ -136,10 +136,7 @@ public class MultipleArraysSenior {
         for (int i = 0; i < 8; i++)
         {
             List<String> arrays = new ArrayList<>();
-            for (int j = 1; j < input[i].length; j++)
-            {
-                arrays.add(input[i][j]);
-            }
+            arrays.addAll(Arrays.asList(input[i]).subList(1, input[i].length));
 
             int result = sumOfMinAlongPath(input[i][0], arrays);
 
