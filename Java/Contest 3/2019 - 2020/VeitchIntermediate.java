@@ -26,41 +26,41 @@ public class VeitchIntermediate {
             }
         }
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 16; i=i+4)
         {
             int value = 8 * veitchDiagram[i] + 4 * veitchDiagram[i+1] + 2 * veitchDiagram[i+2] + veitchDiagram[i+3];
             if (value < 10) {
-                result += value;
+                sb.append(value);
             }
             else {
-                result += (char)('A' + value - 10);
+                sb.append((char)('A' + value - 10));
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static String convertExpression (String expression) {
 
-        String result = "";
+        StringBuilder sb = new StringBuilder();
         String inputs = "ABCD";
 
         for (int i = 0; i < 4; i++)
         {
             String input = "" + inputs.charAt(i);
-            if (expression.indexOf("~"+input) != -1) {
-                result += "0";
+            if (expression.contains("~" + input)) {
+                sb.append("0");
             }
-            else if (expression.indexOf(input) != -1) {
-                result += "1";
+            else if (expression.contains(input)) {
+                sb.append("1");
             }
             else {
-                result += "*";
+                sb.append("*");
             }
         }
 
-        return result;
+        return sb.toString();
     }
 
     static boolean checkMatch (String token, String term) {
