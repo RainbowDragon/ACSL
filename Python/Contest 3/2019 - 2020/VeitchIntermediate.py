@@ -6,13 +6,15 @@
 def getVeitchDiagram(booleanExpression):
 
     veitch_diagram = [0] * 16
-    terms = ["1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101", "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"]
+    grid = [
+        "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
+        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"]
     expressions = booleanExpression.replace("+", " ").split(" ")
 
     for expression in expressions:
-        token = convertExpression(expression)
+        binary_expression = convertExpression(expression)
         for k in range(16):
-            if checkMatch(token, terms[k]):
+            if checkMatch(binary_expression, grid[k]):
                 veitch_diagram[k] = 1
 
     result = ""
@@ -28,24 +30,24 @@ def getVeitchDiagram(booleanExpression):
 
 def convertExpression(expression):
 
-    token = ""
+    binary_expression = ""
 
     for c in "ABCD":
         if ("~" + c) in expression:
-            token += "0"
+            binary_expression += "0"
         elif c in expression:
-            token += "1"
+            binary_expression += "1"
         else:
-            token += "*"
+            binary_expression += "*"
 
-    return token
+    return binary_expression
 
 
-def checkMatch(token, term):
+def checkMatch(binary_expression, cell):
 
     match = True
     for j in range(4):
-        if token[j] != '*' and token[j] != term[j]:
+        if binary_expression[j] != '*' and binary_expression[j] != cell[j]:
             match = False
             break
 
