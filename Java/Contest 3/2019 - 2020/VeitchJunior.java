@@ -11,38 +11,28 @@ public class VeitchJunior {
 
     static String getBooleanExpression (String veitchDiagram) {
 
-        int input = getIntegerFromVeitchDiagram(veitchDiagram);
+        int[] masksInOrder = {
+                240, 15, 204, 102, 51, 153,
+                192, 96, 48, 12, 6, 3,
+                136, 68, 34, 17, 144, 9,
+                128, 64, 32, 16,
+                8, 4, 2, 1
+        };
+        String[] booleanExpressionsInOrder = {
+                "B", "~B", "A", "C", "~A", "~C",
+                "AB", "BC", "~AB", "A~B", "~BC", "~A~B",
+                "A~C", "AC", "~AC", "~A~C", "B~C", "~B~C",
+                "AB~C", "ABC", "~ABC", "~AB~C",
+                "A~B~C", "A~BC", "~A~BC", "~A~B~C"
+        };
 
+        int number = Integer.parseInt(veitchDiagram, 16);
         StringBuilder sb = new StringBuilder();
 
-        input = checkMatch(input, 240, "B", sb);
-        input = checkMatch(input, 15, "~B", sb);
-        input = checkMatch(input, 204, "A", sb);
-        input = checkMatch(input, 102, "C", sb);
-        input = checkMatch(input, 51, "~A", sb);
-        input = checkMatch(input, 153, "~C", sb);
-
-        input = checkMatch(input, 192, "AB", sb);
-        input = checkMatch(input, 96, "BC", sb);
-        input = checkMatch(input, 48, "~AB", sb);
-        input = checkMatch(input, 12, "A~B", sb);
-        input = checkMatch(input, 6, "~BC", sb);
-        input = checkMatch(input, 3, "~A~B", sb);
-        input = checkMatch(input, 136, "A~C", sb);
-        input = checkMatch(input, 68, "AC", sb);
-        input = checkMatch(input, 34, "~AC", sb);
-        input = checkMatch(input, 17, "~A~C", sb);
-        input = checkMatch(input, 144, "B~C", sb);
-        input = checkMatch(input, 9, "~B~C", sb);
-
-        input = checkMatch(input, 128, "AB~C", sb);
-        input = checkMatch(input, 64, "ABC", sb);
-        input = checkMatch(input, 32, "~ABC", sb);
-        input = checkMatch(input, 16, "~AB~C", sb);
-        input = checkMatch(input, 8, "A~B~C", sb);
-        input = checkMatch(input, 4, "A~BC", sb);
-        input = checkMatch(input, 2, "~A~BC", sb);
-        checkMatch(input, 1, "~A~B~C", sb);
+        for (int i = 0; i < booleanExpressionsInOrder.length; i++)
+        {
+            number = checkMatch(number, masksInOrder[i], booleanExpressionsInOrder[i], sb);
+        }
 
         return sb.toString();
     }
@@ -51,29 +41,23 @@ public class VeitchJunior {
 
         if ((input & mask) == mask) {
             if (!sb.isEmpty()) {
-                sb.append(" + ");
+                sb.append("+");
             }
             sb.append(expression);
 
-            input = input & (~mask);
+            input -= mask;
         }
 
         return input;
-    }
-
-    static int getIntegerFromVeitchDiagram (String veitchDiagram) {
-
-        int front = Integer.parseInt(veitchDiagram.substring(0,1), 16);
-        int back = Integer.parseInt(veitchDiagram.substring(1,2), 16);
-
-        return (front << 4) + back;
     }
 
     public static void main (String [] args) {
 
         String[] input = {"33", "3C", "94", "77", "95", "F0", "1D", "9D", "E9", "E7"};
 
-        String[] output = {"~A", "~AB + A~B", "B~C + A~BC", "C + ~A~C", "~A~C + AB~C + A~BC", "B", "A~B + ~A~C", "~C + A~BC", "AB + ~B~C + ~ABC", "C + AB~C + ~A~B~C"};
+        String[] output = {
+                "~A", "~AB+A~B", "B~C+A~BC", "C+~A~C", "~A~C+AB~C+A~BC",
+                "B", "A~B+~A~C", "~C+A~BC", "AB+~B~C+~ABC", "C+AB~C+~A~B~C"};
 
         for (int i = 0; i < 10; i++)
         {
