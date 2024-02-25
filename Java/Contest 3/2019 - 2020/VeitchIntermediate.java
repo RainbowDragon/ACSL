@@ -12,15 +12,17 @@ public class VeitchIntermediate {
     static String getVeitchDiagram (String booleanExpression) {
 
         int[] veitchDiagram = new int[16];
-        String[] terms = {"1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101", "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"};
+        String[] grid = {
+                "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
+                "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"};
         String[] expressions = booleanExpression.replace("+", " ").split(" ");
 
         for (String expression : expressions)
         {
-            String token = convertExpression(expression);
+            String binaryExpression = convertExpression(expression);
             for (int i = 0; i < 16; i++)
             {
-                if (checkMatch(token, terms[i])) {
+                if (checkMatch(binaryExpression, grid[i])) {
                     veitchDiagram[i] = 1;
                 }
             }
@@ -63,12 +65,12 @@ public class VeitchIntermediate {
         return sb.toString();
     }
 
-    static boolean checkMatch (String token, String term) {
+    static boolean checkMatch (String binaryExpression, String cell) {
 
         boolean match = true;
         for (int i = 0; i < 4; i++)
         {
-            if (token.charAt(i) != '*' && token.charAt(i) != term.charAt(i)) {
+            if (binaryExpression.charAt(i) != '*' && binaryExpression.charAt(i) != cell.charAt(i)) {
                 match = false;
                 break;
             }
