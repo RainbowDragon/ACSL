@@ -37,18 +37,18 @@ public class VeitchJunior {
         return sb.toString();
     }
 
-    static int checkMatch (int input, int mask, String expression, StringBuilder sb) {
+    static int checkMatch (int number, int mask, String expression, StringBuilder sb) {
 
-        if ((input & mask) == mask) {
+        if ((number & mask) == mask) {
             if (!sb.isEmpty()) {
                 sb.append("+");
             }
             sb.append(expression);
 
-            input -= mask;
+            number -= mask;
         }
 
-        return input;
+        return number;
     }
 
     public static void main (String [] args) {
