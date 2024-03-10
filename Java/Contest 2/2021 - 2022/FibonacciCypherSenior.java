@@ -97,7 +97,8 @@ public class FibonacciCypherSenior {
                 "You may only use C++, Java, and Python in HackerRank.",
                 "Madam, I'm Adam is one of the most common palindromes.",
                 "381 401 418 416 377 461 409 403 457 449 431 466 326 422 419 413 437 341 458 395 398 350 405 444 480 412 431 338 443 414 469 437 446 432 383 396 421 341 424 426 434 400 470 452 441 380 419 395 433 467 335 416 431 398 386 460 434 435 432 449 406 420",
-                "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."};
+                "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."
+        };
 
         for (int i = 0; i < 10; i++)
         {
