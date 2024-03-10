@@ -60,7 +60,10 @@ public class NumberTransformationIntermediate {
         input[8] = new long[]{9876543210L, 5};
         input[9] = new long[]{314159265358L, 10};
 
-        long[] output = {193648L, 873173L, 95322341L, 86727361L, 831752441L, 2198216L, 80642095L, 924681357L, 3210941234L, 754315221114L};
+        long[] output = {
+                193648L, 873173L, 95322341L, 86727361L, 831752441L,
+                2198216L, 80642095L, 924681357L, 3210941234L, 754315221114L
+        };
 
         for (int i = 0; i < 10; i++)
         {
