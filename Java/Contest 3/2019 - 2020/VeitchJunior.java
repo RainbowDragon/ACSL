@@ -57,7 +57,8 @@ public class VeitchJunior {
 
         String[] output = {
                 "~A", "~AB+A~B", "B~C+A~BC", "C+~A~C", "~A~C+AB~C+A~BC",
-                "B", "A~B+~A~C", "~C+A~BC", "AB+~B~C+~ABC", "C+AB~C+~A~B~C"};
+                "B", "A~B+~A~C", "~C+A~BC", "AB+~B~C+~ABC", "C+AB~C+~A~B~C"
+        };
 
         for (int i = 0; i < 10; i++)
         {

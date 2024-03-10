@@ -14,7 +14,8 @@ public class VeitchIntermediate {
         int[] veitchDiagram = new int[16];
         String[] grid = {
                 "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
-                "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"};
+                "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"
+        };
         String[] expressions = booleanExpression.replace("+", " ").split(" ");
 
         for (String expression : expressions)
