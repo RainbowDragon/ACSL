@@ -71,7 +71,8 @@ public class FibonacciPascalIntermediate {
                 "5 4 495",
                 "4 11 203490",
                 "9 9 2042975",
-                "7 16 354817320"};
+                "7 16 354817320"
+        };
 
         for (int i = 0; i < 10; i++)
         {
