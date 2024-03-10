@@ -84,7 +84,8 @@ public class LexStringsJunior {
                 "acdefhilmnoprstuvacehinorstuaceinorstaceinorstaceinacece",
                 "acdefhiklmnoprstuwyacefhiklnorstacehrstaersasasa",
                 "abcdeghijlmnoprstuvyacdeghilmnoprstuacginrsacgnacna",
-                "abcdeghilmnoprstuvyacdeghilnorstvacdeghintvadeinaia"};
+                "abcdeghilmnoprstuvyacdeghilnorstvacdeghintvadeinaia"
+        };
 
         for (int i = 0; i < 10; i++)
         {

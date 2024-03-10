@@ -109,7 +109,8 @@ public class LexStringsSenior {
                 "9e,5nica,4or,3th,202CTsu,1vpmlfdSA",
                 "53,472,345689deo,2trni1,1IPTafghsu",
                 "14e,13p,7i,6r,5cdk,4P,2alost,1ywnmfH",
-                "8o,7e,5hn,3wtsrda,2ikp,1ylfbT10"};
+                "8o,7e,5hn,3wtsrda,2ikp,1ylfbT10"
+        };
 
         for (int i = 0; i < 10; i++)
         {

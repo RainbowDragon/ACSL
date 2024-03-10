@@ -105,7 +105,8 @@ public class LexStringsIntermediate {
                 "PPSSTTAACEHIIMMSSUV",
                 "OOOOSSSYYYPPSSEPUYZ",
                 "LLLOOSSAAABDEEEHHNNSSS",
-                "FGHTDGCIJKRUY"};
+                "FGHTDGCIJKRUY"
+        };
 
         for (int i = 0; i < 10; i++)
         {
