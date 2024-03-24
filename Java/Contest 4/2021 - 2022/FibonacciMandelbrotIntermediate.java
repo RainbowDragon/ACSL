@@ -131,6 +131,8 @@ public class FibonacciMandelbrotIntermediate {
             }
             else {
                 System.out.println("Test Case " + i + ": Failed!");
+                System.out.println("Expected output: " + output[i]);
+                System.out.println("Your output: " + result);
             }
         }
     }
