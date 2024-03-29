@@ -12,7 +12,7 @@
 #  2. INTEGER d
 #  3. INTEGER r
 #
-def sumOfLastRow(s, d, r):
+def sum_of_last_row(s, d, r):
 
     result = 0
     numbers_to_skip = r * (r - 1) // 2
@@ -22,7 +22,7 @@ def sumOfLastRow(s, d, r):
     current_number = start_number + delta * numbers_to_skip
 
     for k in range(r):
-        result += sumOfOctDigit(current_number)
+        result += sum_of_oct_digit(current_number)
         current_number += delta
 
     return result
@@ -42,7 +42,7 @@ def oct2decimal(oct_number):
     return number
 
 
-def sumOfOctDigit(number):
+def sum_of_oct_digit(number):
 
     digit_sum = 0
 
@@ -68,7 +68,7 @@ test_input[9] = [77, 7, 100]
 test_output = [36, 38, 230, 99, 178, 1038, 429, 329, 374, 1547]
 
 for i in range(10):
-    test_result = sumOfLastRow(test_input[i][0], test_input[i][1], test_input[i][2])
+    test_result = sum_of_last_row(test_input[i][0], test_input[i][1], test_input[i][2])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

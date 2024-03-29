@@ -12,24 +12,24 @@
 #  2. INTEGER d
 #  3. INTEGER r
 #
-def sumOfLastRow(s, d, r):
+def sum_of_last_row(s, d, r):
 
     result = 0
     numbers_to_skip = r * (r - 1) // 2
 
-    current_number = transformToSingleDigit(s)
+    current_number = transform_to_single_digit(s)
     for k in range(numbers_to_skip):
         current_number += d
-        current_number = transformToSingleDigit(current_number)
+        current_number = transform_to_single_digit(current_number)
 
     for k in range(r):
-        result += transformToSingleDigit(current_number)
+        result += transform_to_single_digit(current_number)
         current_number += d
 
     return result
 
 
-def transformToSingleDigit(number):
+def transform_to_single_digit(number):
 
     while number > 9:
         digit_sum = 0
@@ -58,7 +58,7 @@ test_input[9] = [3141, 59, 26]
 test_output = [28, 17, 140, 135, 397, 218, 399, 1003, 154, 126]
 
 for i in range(10):
-    test_result = sumOfLastRow(test_input[i][0], test_input[i][1], test_input[i][2])
+    test_result = sum_of_last_row(test_input[i][0], test_input[i][1], test_input[i][2])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

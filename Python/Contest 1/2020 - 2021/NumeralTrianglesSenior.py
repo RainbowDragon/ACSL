@@ -12,7 +12,7 @@
 #  2. STRING d
 #  3. INTEGER r
 #
-def sumOfLastRow(s, d, r):
+def sum_of_last_row(s, d, r):
 
     result = 0
     numbers_to_skip = r * (r - 1) // 2
@@ -22,16 +22,16 @@ def sumOfLastRow(s, d, r):
     current_number = start_number + delta * numbers_to_skip
 
     for k in range(r):
-        result += transformToSingleHexDigit(current_number)
+        result += transform_to_single_hex_digit(current_number)
         current_number += delta
 
-    result = transformToSingleHexDigit(result)
+    result = transform_to_single_hex_digit(result)
     hex_digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
 
     return hex_digits[result]
 
 
-def transformToSingleHexDigit(number):
+def transform_to_single_hex_digit(number):
 
     while number > 15:
         digit_sum = 0
@@ -60,7 +60,7 @@ test_input[9] = ["704", "1776", "244"]
 test_output = ["5", "C", "A", "F", "5", "5", "F", "3", "A", "E"]
 
 for i in range(10):
-    test_result = sumOfLastRow(test_input[i][0], test_input[i][1], int(test_input[i][2]))
+    test_result = sum_of_last_row(test_input[i][0], test_input[i][1], int(test_input[i][2]))
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
