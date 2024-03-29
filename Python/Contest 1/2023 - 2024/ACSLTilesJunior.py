@@ -11,12 +11,12 @@
 # 1. INTEGER originalRows
 # 2. STRING tiles
 #
-def findDiscardSum(originalRows, tiles):
+def find_discard_sum(original_rows, tiles):
 
     rows = [0] * 4
     for j in reversed(range(4)):
-        rows[j] = originalRows % 10
-        originalRows //= 10
+        rows[j] = original_rows % 10
+        original_rows //= 10
 
     result = 0
 
@@ -58,7 +58,7 @@ test_input[9] = ["7169", "71 56 15 65 98 71 89 71 11 55 77 17 66 51"]
 test_output = [18, 26, 31, 22, 45, 56, 0, 59, 48, 14]
 
 for i in range(10):
-    test_result = findDiscardSum(int(test_input[i][0]), test_input[i][1])
+    test_result = find_discard_sum(int(test_input[i][0]), test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
