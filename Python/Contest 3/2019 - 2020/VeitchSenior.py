@@ -3,7 +3,7 @@
 #
 #
 
-def getBooleanExpression(veitchDiagram):
+def get_boolean_expression(veitch_diagram):
 
     binary_expressions_in_order = [
         "*1**", "***1", "*0**", "1***", "**1*", "0***", "**0*", "***0",
@@ -15,25 +15,27 @@ def getBooleanExpression(veitchDiagram):
         "1*11", "101*", "011*", "0*11", "001*", "010*", "0*01", "000*",
         "*100", "*101", "*001", "*000", "1*00", "1*10", "0*10", "0*00",
         "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
-        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"]
+        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"
+    ]
     grid = [
         "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
-        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"]
+        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"
+    ]
 
-    number = int(veitchDiagram, 16)
+    number = int(veitch_diagram, 16)
     sb = []
     for binary_expression in binary_expressions_in_order:
-        mask = getIntegerFromBinaryExpression(binary_expression, grid)
+        mask = get_integer_from_binary_expression(binary_expression, grid)
         if (number & mask) == mask:
             if len(sb) > 0:
                 sb.append("+")
-            sb.append(getBooleanExpressionFromBinaryExpression(binary_expression))
+            sb.append(get_boolean_expression_from_binary_expression(binary_expression))
             number -= mask
 
     return "".join(sb)
 
 
-def getBooleanExpressionFromBinaryExpression(binary_expression):
+def get_boolean_expression_from_binary_expression(binary_expression):
 
     result = ""
     inputs = "ABCD"
@@ -46,18 +48,18 @@ def getBooleanExpressionFromBinaryExpression(binary_expression):
     return result
 
 
-def getIntegerFromBinaryExpression(binary_expression, grid):
+def get_integer_from_binary_expression(binary_expression, grid):
 
     result = 0
     for cell in grid:
-        if checkMatch(binary_expression, cell):
+        if check_match(binary_expression, cell):
             result += 1
         result <<= 1
 
     return result >> 1
 
 
-def checkMatch(binary_expression, cell):
+def check_match(binary_expression, cell):
 
     match = True
     for j in range(4):
@@ -83,7 +85,7 @@ test_output[8] = "AB~D+~ABD+A~BD+~A~B~D"
 test_output[9] = "B~D+~A~CD+~A~B~C~D"
 
 for i in range(10):
-    test_result = getBooleanExpression(test_input[i])
+    test_result = get_boolean_expression(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

@@ -3,18 +3,19 @@
 #
 #
 
-def getVeitchDiagram(booleanExpression):
+def get_veitch_diagram(boolean_expression):
 
     veitch_diagram = [0] * 16
     grid = [
         "1100", "1110", "0110", "0100", "1101", "1111", "0111", "0101",
-        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"]
-    expressions = booleanExpression.replace("+", " ").split(" ")
+        "1001", "1011", "0011", "0001", "1000", "1010", "0010", "0000"
+    ]
+    expressions = boolean_expression.replace("+", " ").split(" ")
 
     for expression in expressions:
-        binary_expression = convertExpression(expression)
+        binary_expression = convert_expression(expression)
         for k in range(16):
-            if checkMatch(binary_expression, grid[k]):
+            if check_match(binary_expression, grid[k]):
                 veitch_diagram[k] = 1
 
     result = ""
@@ -28,7 +29,7 @@ def getVeitchDiagram(booleanExpression):
     return result
 
 
-def convertExpression(expression):
+def convert_expression(expression):
 
     binary_expression = ""
 
@@ -43,7 +44,7 @@ def convertExpression(expression):
     return binary_expression
 
 
-def checkMatch(binary_expression, cell):
+def check_match(binary_expression, cell):
 
     match = True
     for j in range(4):
@@ -69,7 +70,7 @@ test_input[9] = "B~D+~A~CD+~A~B~C~D"
 test_output = ["FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"]
 
 for i in range(10):
-    test_result = getVeitchDiagram(test_input[i])
+    test_result = get_veitch_diagram(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
