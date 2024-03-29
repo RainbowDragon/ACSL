@@ -3,7 +3,7 @@
 #
 #
 
-def transformNumber(num, pos):
+def transform_number(num, pos):
 
     result = 0
 
@@ -47,7 +47,7 @@ test_input[9] = [314159265358, 10]
 test_output = [193648, 873173, 95322341, 86727361, 831752441, 2198216, 80642095, 924681357, 3210941234, 754315221114]
 
 for i in range(10):
-    test_result = transformNumber(test_input[i][0], test_input[i][1])
+    test_result = transform_number(test_input[i][0], test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

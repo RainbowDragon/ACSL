@@ -3,10 +3,10 @@
 #
 #
 
-def transformNumber(num, pos):
+def transform_number(num, pos):
 
     result = 0
-    number_prime_factors = countPrimeFactors(num)
+    number_prime_factors = count_prime_factors(num)
     digits = [0] * 20
     index = 0
     while num > 0:
@@ -34,7 +34,7 @@ def transformNumber(num, pos):
     return result
 
 
-def countPrimeFactors(num):
+def count_prime_factors(num):
 
     count = 0
 
@@ -72,7 +72,7 @@ test_input[9] = [16058314729, 3]
 test_output = [546414, 1312113, 7841, 8131571, 1488173823436, 65365, 12798611133, 424675311351, 23216, 8137121510811152]
 
 for i in range(10):
-    test_result = transformNumber(test_input[i][0], test_input[i][1])
+    test_result = transform_number(test_input[i][0], test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
