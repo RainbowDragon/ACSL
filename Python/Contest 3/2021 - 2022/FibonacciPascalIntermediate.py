@@ -9,9 +9,9 @@
 # The function is expected to return a STRING.
 # The function accepts INTEGER fibNumber as parameter.
 #
-def findOddEvenMax(fib):
+def find_odd_even_max(fib):
 
-    n = getFibonacciIndex(fib)
+    n = get_fibonacci_index(fib)
     k = 0
     current = 1
     count_odd = 1
@@ -31,7 +31,7 @@ def findOddEvenMax(fib):
     return str(count_odd) + " " + str(count_even) + " " + str(cur_max)
 
 
-def getFibonacciIndex(fib):
+def get_fibonacci_index(fib):
 
     index = 1
     first = 1
@@ -61,7 +61,7 @@ test_output[8] = "9 9 2042975"
 test_output[9] = "7 16 354817320"
 
 for i in range(10):
-    test_result = findOddEvenMax(test_input[i])
+    test_result = find_odd_even_max(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

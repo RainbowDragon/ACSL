@@ -9,9 +9,9 @@
 # The function is expected to return an INTEGER.
 # The function accepts INTEGER fibNumber as parameter.
 #
-def countUniqueValues(fib):
+def count_unique_values(fib):
 
-    n = getFibonacciIndex(fib)
+    n = get_fibonacci_index(fib)
     count_map = {}
 
     for k in range(1, n+1):
@@ -40,7 +40,7 @@ def countUniqueValues(fib):
     return result
 
 
-def getFibonacciIndex(fib):
+def get_fibonacci_index(fib):
 
     index = 1
     first = 1
@@ -60,7 +60,7 @@ test_input = [8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903]
 test_output = [2, 8, 16, 31, 58, 6, 21, 67, 96, 171]
 
 for i in range(10):
-    test_result = countUniqueValues(test_input[i])
+    test_result = count_unique_values(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

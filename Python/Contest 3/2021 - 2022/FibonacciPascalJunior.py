@@ -9,9 +9,9 @@
 # The function is expected to return a STRING.
 # The function accepts INTEGER fibNumber as parameter.
 #
-def printNumbers(fib):
+def print_numbers(fib):
 
-    n = getFibonacciIndex(fib)
+    n = get_fibonacci_index(fib)
     k = 0
     current = 1
     result = "1"
@@ -25,7 +25,7 @@ def printNumbers(fib):
     return result
 
 
-def getFibonacciIndex(fib):
+def get_fibonacci_index(fib):
 
     index = 1
     first = 1
@@ -55,7 +55,7 @@ test_output[8] = "1 20 171 816 2380 4368 5005 3432 1287 220 11"
 test_output[9] = "1 28 351 2600 12650 42504 100947 170544 203490 167960 92378 31824 6188 560 15"
 
 for i in range(10):
-    test_result = printNumbers(test_input[i])
+    test_result = print_numbers(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
