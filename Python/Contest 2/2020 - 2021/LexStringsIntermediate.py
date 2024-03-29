@@ -11,14 +11,14 @@
 #  1. STRING s
 #  2. INTEGER n
 #
-def rearrangedString(s, n):
+def rearranged_string(s, n):
 
-    blocks = findBlocks(s)
+    blocks = find_blocks(s)
 
     blocks.sort()
     blocks.sort(key=len, reverse=True)
 
-    blocks = findBlocks("".join(blocks))
+    blocks = find_blocks("".join(blocks))
 
     for k in range(len(blocks)):
         if len(blocks[k]) > n:
@@ -27,7 +27,7 @@ def rearrangedString(s, n):
     return "".join(blocks)
 
 
-def findBlocks(s):
+def find_blocks(s):
 
     blocks = []
     last_index = 0
@@ -65,10 +65,11 @@ test_output = [
     "PPSSTTAACEHIIMMSSUV",
     "OOOOSSSYYYPPSSEPUYZ",
     "LLLOOSSAAABDEEEHHNNSSS",
-    "FGHTDGCIJKRUY"]
+    "FGHTDGCIJKRUY"
+]
 
 for i in range(10):
-    test_result = rearrangedString(test_input[i][0], int(test_input[i][1]))
+    test_result = rearranged_string(test_input[i][0], int(test_input[i][1]))
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

@@ -9,12 +9,12 @@
 # The function is expected to return a STRING.
 # The function accepts STRING s as parameter.
 #
-def rearrangedString(s):
+def rearranged_string(s):
 
     char_count = [0] * 26
     max_count = 0
     for k in range(len(s)):
-        index = getIndexOfChar(s[k])
+        index = get_index_of_char(s[k])
         if index != -1:
             char_count[index] += 1
             max_count = max(max_count, char_count[index])
@@ -32,7 +32,7 @@ def rearrangedString(s):
     return result
 
 
-def getIndexOfChar(c):
+def get_index_of_char(c):
 
     c = c.upper()
     if c.isalpha():
@@ -63,10 +63,11 @@ test_output = [
     "acdefhilmnoprstuvacehinorstuaceinorstaceinorstaceinacece",
     "acdefhiklmnoprstuwyacefhiklnorstacehrstaersasasa",
     "abcdeghijlmnoprstuvyacdeghilmnoprstuacginrsacgnacna",
-    "abcdeghilmnoprstuvyacdeghilnorstvacdeghintvadeinaia"]
+    "abcdeghilmnoprstuvyacdeghilnorstvacdeghintvadeinaia"
+]
 
 for i in range(10):
-    test_result = rearrangedString(test_input[i])
+    test_result = rearranged_string(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

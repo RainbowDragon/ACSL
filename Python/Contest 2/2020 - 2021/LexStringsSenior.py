@@ -10,12 +10,12 @@
 # The function accepts following parameters:
 #  1. STRING s
 #
-def rearrangedString(s):
+def rearranged_string(s):
 
     char_count = [0] * 128
     max_count = 0
     for k in range(len(s)):
-        index = getIndexOfChar(s[k])
+        index = get_index_of_char(s[k])
         if index != -1:
             char_count[index] += 1
             max_count = max(max_count, char_count[index])
@@ -46,7 +46,7 @@ def rearrangedString(s):
     return result
 
 
-def getIndexOfChar(c):
+def get_index_of_char(c):
 
     if c.isalnum():
         return ord(c)
@@ -76,10 +76,11 @@ test_output = [
     "9e,5nica,4or,3th,202CTsu,1vpmlfdSA",
     "53,472,345689deo,2trni1,1IPTafghsu",
     "14e,13p,7i,6r,5cdk,4P,2alost,1ywnmfH",
-    "8o,7e,5hn,3wtsrda,2ikp,1ylfbT10"]
+    "8o,7e,5hn,3wtsrda,2ikp,1ylfbT10"
+]
 
 for i in range(10):
-    test_result = rearrangedString(test_input[i])
+    test_result = rearranged_string(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
