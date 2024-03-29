@@ -14,7 +14,7 @@
 # 4. CHARACTER c4
 # 5. CHARACTER c5
 #
-def findTime(c1, c2, c3, c4, c5):
+def find_time(c1, c2, c3, c4, c5):
 
     hour = 0
     minute = 0
@@ -62,7 +62,7 @@ test_input[9] = ['W', 'B', 'B', 'B', 'B']
 test_output = ["04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"]
 
 for i in range(10):
-    test_result = findTime(test_input[i][0], test_input[i][1], test_input[i][2], test_input[i][3], test_input[i][4])
+    test_result = find_time(test_input[i][0], test_input[i][1], test_input[i][2], test_input[i][3], test_input[i][4])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
