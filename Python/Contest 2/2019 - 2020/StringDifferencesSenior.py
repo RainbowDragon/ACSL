@@ -3,17 +3,17 @@
 #
 #
 
-def differenceFactor(s1, s2):
+def difference_factor(s1, s2):
 
-    s1 = getUpperCaseString(s1)
-    s2 = getUpperCaseString(s2)
+    s1 = get_upper_case_string(s1)
+    s2 = get_upper_case_string(s2)
 
-    return getDifferenceFactor(s1, s2)
+    return get_difference_factor(s1, s2)
 
 
-def getDifferenceFactor(s1, s2):
+def get_difference_factor(s1, s2):
 
-    str_common = getLongestCommonSubstring(s1, s2)
+    str_common = get_longest_common_substring(s1, s2)
     len_common = len(str_common)
 
     if len_common == 0:
@@ -22,13 +22,13 @@ def getDifferenceFactor(s1, s2):
         i1 = s1.index(str_common)
         i2 = s2.index(str_common)
 
-        left_count = getDifferenceFactor(s1[0:i1], s2[0:i2])
-        right_count = getDifferenceFactor(s1[i1+len_common:], s2[i2+len_common:])
+        left_count = get_difference_factor(s1[0:i1], s2[0:i2])
+        right_count = get_difference_factor(s1[i1+len_common:], s2[i2+len_common:])
 
         return left_count + len_common + right_count
 
 
-def getLongestCommonSubstring(s1, s2):
+def get_longest_common_substring(s1, s2):
 
     str_longest_common = ""
 
@@ -44,7 +44,7 @@ def getLongestCommonSubstring(s1, s2):
     return str_longest_common
 
 
-def getUpperCaseString(s):
+def get_upper_case_string(s):
 
     str_upper = ""
 
@@ -71,7 +71,7 @@ test_input[9] = ["A tutor who tooted the flute tried to tutor two tooters to too
 test_output = [10, 19, 26, 18, 11, 14, 50, 20, 9, 31]
 
 for i in range(10):
-    test_result = differenceFactor(test_input[i][0], test_input[i][1])
+    test_result = difference_factor(test_input[i][0], test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

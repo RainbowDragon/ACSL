@@ -3,13 +3,13 @@
 #
 #
 
-def stringDifferences(s1, s2):
+def string_differences(s1, s2):
 
-    s1 = deleteDouble(s1)
-    s2 = deleteDouble(s2)
+    s1 = delete_double(s1)
+    s2 = delete_double(s2)
 
-    s1 = deleteVowels(s1)
-    s2 = deleteVowels(s2)
+    s1 = delete_vowels(s1)
+    s2 = delete_vowels(s2)
     str_s1 = ""
     str_s2 = ""
     min_len = min(len(s1), len(s2))
@@ -49,7 +49,7 @@ def stringDifferences(s1, s2):
             return s2
 
 
-def deleteDouble(s):
+def delete_double(s):
 
     str_single = ""
     last = ' '
@@ -61,7 +61,7 @@ def deleteDouble(s):
     return str_single
 
 
-def deleteVowels(s):
+def delete_vowels(s):
 
     str_non_vowel = ""
     for j in range(len(s)):
@@ -88,7 +88,7 @@ test_input[9] = ["AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"]
 test_output = ["R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"]
 
 for i in range(10):
-    test_result = stringDifferences(test_input[i][0], test_input[i][1])
+    test_result = string_differences(test_input[i][0], test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

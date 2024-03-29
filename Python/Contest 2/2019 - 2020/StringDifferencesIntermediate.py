@@ -3,7 +3,7 @@
 #
 #
 
-def samenessFactor(s1, s2):
+def sameness_factor(s1, s2):
 
     done = False
 
@@ -60,7 +60,7 @@ test_input[9] = ["ABCDEFGHIJK", "ABDCEFGKILKJMN"]
 test_output = [-35, -5, -4, -86, -52, 23, 27, 11, 68, -9]
 
 for i in range(10):
-    test_result = samenessFactor(test_input[i][0], test_input[i][1])
+    test_result = sameness_factor(test_input[i][0], test_input[i][1])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
