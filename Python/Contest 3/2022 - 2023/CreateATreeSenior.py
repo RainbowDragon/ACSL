@@ -9,7 +9,7 @@
 # The function is expected to return a STRING.
 # The function accepts STRING input as parameter.
 #
-def getTraversals(s):
+def get_traversals(s):
 
     letters = []
     values = []
@@ -101,7 +101,7 @@ test_output[8] = "JAAAGGIVPOMMNRR AAGIGAMNMORRPVJ"
 test_output[9] = "ABDFHKMOQTVWYZ ZYWVTQOMKHFDBA"
 
 for i in range(10):
-    test_result = getTraversals(test_input[i])
+    test_result = get_traversals(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

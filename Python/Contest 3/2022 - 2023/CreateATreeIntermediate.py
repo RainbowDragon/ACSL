@@ -9,7 +9,7 @@
 # The function is expected to return a STRING.
 # The function accepts STRING input as parameter.
 #
-def onlyLeftOrRight(s):
+def only_left_or_right(s):
 
     letters = []
     values = []
@@ -93,7 +93,7 @@ test_output[8] = "AORV NONE"
 test_output[9] = "NONE ABDFHKMOQTVWY"
 
 for i in range(10):
-    test_result = onlyLeftOrRight(test_input[i])
+    test_result = only_left_or_right(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

@@ -9,7 +9,7 @@
 # The function is expected to return a STRING.
 # The function accepts STRING input as parameter.
 #
-def listByValue(s):
+def list_by_value(s):
 
     letters = []
     values = []
@@ -68,7 +68,7 @@ test_output[8] = "JAVAGPAGIORMRMN"
 test_output[9] = "ABDFHKMOQTVWYZ"
 
 for i in range(10):
-    test_result = listByValue(test_input[i])
+    test_result = list_by_value(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
