@@ -9,17 +9,17 @@
 # The function is expected to return an INTEGER.
 # The function accepts STRING s as parameter.
 #
-def findLastOctal(s):
+def find_last_octal(s):
 
     concatenated_str = ""
     for k in range(len(s)):
-        binary_str = getBinaryStringForChar(s[k])
+        binary_str = get_binary_string_for_char(s[k])
         concatenated_str += binary_str
 
     number = 0
     found = False
     while not found:
-        number_str = getBinaryStringForInt(number)
+        number_str = get_binary_string_for_int(number)
         len_number_str = len(number_str)
 
         first = concatenated_str.find(number_str)
@@ -35,12 +35,12 @@ def findLastOctal(s):
         else:
             number += 1
 
-    concatenated_str = getOctalStringForInt(int(concatenated_str, 2))
+    concatenated_str = get_octal_string_for_int(int(concatenated_str, 2))
 
     number = 0
     found = False
     while not found:
-        number_str = getOctalStringForInt(number)
+        number_str = get_octal_string_for_int(number)
         len_number_str = len(number_str)
 
         first = concatenated_str.find(number_str)
@@ -60,9 +60,9 @@ def findLastOctal(s):
     return number
 
 
-def getBinaryStringForChar(c):
+def get_binary_string_for_char(c):
 
-    char_str = getBinaryStringForInt(ord(c))
+    char_str = get_binary_string_for_int(ord(c))
     len_char_str = len(char_str)
     if len_char_str < 8:
         char_str = ("0" * (8 - len_char_str)) + char_str
@@ -70,12 +70,12 @@ def getBinaryStringForChar(c):
     return char_str
 
 
-def getBinaryStringForInt(num):
+def get_binary_string_for_int(num):
 
     return str(bin(num)[2:])
 
 
-def getOctalStringForInt(num):
+def get_octal_string_for_int(num):
 
     return str(oct(num)[2:])
 
@@ -95,7 +95,7 @@ test_input[9] = "~{w|x|y|z}"
 test_output = [4, 9, 8, 6, 5, 6, 9, 9, 2, -1]
 
 for i in range(10):
-    test_result = findLastOctal(test_input[i])
+    test_result = find_last_octal(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

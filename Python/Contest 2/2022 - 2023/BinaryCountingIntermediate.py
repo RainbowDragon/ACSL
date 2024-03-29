@@ -9,17 +9,17 @@
 # The function is expected to return an INTEGER.
 # The function accepts STRING s as parameter.
 #
-def findLastBinary(s):
+def find_last_binary(s):
 
     concatenated_str = ""
     for k in range(len(s)):
-        binary_str = getBinaryStringForChar(s[k])
+        binary_str = get_binary_string_for_char(s[k])
         concatenated_str += binary_str
 
     number = 0
     found = False
     while not found:
-        number_str = getBinaryStringForInt(number)
+        number_str = get_binary_string_for_int(number)
         len_number_str = len(number_str)
 
         first = concatenated_str.find(number_str)
@@ -39,9 +39,9 @@ def findLastBinary(s):
     return number
 
 
-def getBinaryStringForChar(c):
+def get_binary_string_for_char(c):
 
-    char_str = getBinaryStringForInt(ord(c))
+    char_str = get_binary_string_for_int(ord(c))
     len_char_str = len(char_str)
     if len_char_str < 8:
         char_str = ("0" * (8 - len_char_str)) + char_str
@@ -49,7 +49,7 @@ def getBinaryStringForChar(c):
     return char_str
 
 
-def getBinaryStringForInt(num):
+def get_binary_string_for_int(num):
 
     return str(bin(num)[2:])
 
@@ -69,7 +69,7 @@ test_input[9] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of O
 test_output = [12, 20, 14, 22, 27, 29, 27, 30, 20, 26]
 
 for i in range(10):
-    test_result = findLastBinary(test_input[i])
+    test_result = find_last_binary(test_input[i])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
