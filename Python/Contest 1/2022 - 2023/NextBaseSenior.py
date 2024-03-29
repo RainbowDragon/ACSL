@@ -12,7 +12,7 @@
 #  2. INTEGER base
 #  3. STRING start
 #
-def findModeCount(num, base, start):
+def find_mode_count(num, base, start):
 
     result = 0
     counts = [0] * base
@@ -48,7 +48,7 @@ test_input[9] = [25, 2, "110000111010"]
 test_output = [9, 105, 14, 10, 4938, 42, 88, 336, 940, 165]
 
 for i in range(10):
-    test_result = findModeCount(test_input[i][0], test_input[i][1], test_input[i][2])
+    test_result = find_mode_count(test_input[i][0], test_input[i][1], test_input[i][2])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

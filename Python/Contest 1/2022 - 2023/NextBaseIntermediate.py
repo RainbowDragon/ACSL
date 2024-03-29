@@ -12,7 +12,7 @@
 #  2. INTEGER base
 #  3. INTEGER start
 #
-def countLargestDigit(num, base, start):
+def count_largest_digit(num, base, start):
 
     result = 0
     start_value = int(str(start), base)
@@ -48,7 +48,7 @@ test_input[9] = [25, 2, 110000111010]
 test_output = [2, 21, 24, 1, 170, 357, 34, 13, 31, 135]
 
 for i in range(10):
-    test_result = countLargestDigit(test_input[i][0], test_input[i][1], test_input[i][2])
+    test_result = count_largest_digit(test_input[i][0], test_input[i][1], test_input[i][2])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")

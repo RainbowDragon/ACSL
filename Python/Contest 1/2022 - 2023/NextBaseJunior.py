@@ -12,7 +12,7 @@
 # 2. INTEGER base
 # 3. INTEGER start
 #
-def findDigitSum(num, base, start):
+def find_digit_sum(num, base, start):
 
     result = 0
     start_value = int(str(start), base)
@@ -45,7 +45,7 @@ test_input[9] = [25, 2, 110000111010]
 test_output = [65, 64, 189, 212, 170, 10948, 225, 876, 675, 135]
 
 for i in range(10):
-    test_result = findDigitSum(test_input[i][0], test_input[i][1], test_input[i][2])
+    test_result = find_digit_sum(test_input[i][0], test_input[i][1], test_input[i][2])
 
     if test_result == test_output[i]:
         print("Test Case " + str(i) + ": Passed!")
