@@ -57,16 +57,46 @@ def get_upper_case_string(s):
 
 
 test_input = [[""] * 2] * 10
-test_input[0] = ["I am going home now", "I will go home now"]
-test_input[1] = ["The big black bear bit a big black bug", "The big black bug bled black blood"]
-test_input[2] = ["Complementary angle measures sum to 90 degrees.", "The measures of supplementary angles add to 180 degrees."]
-test_input[3] = ["A Tale of Two Cities was published by Dickens in 1859.", "In 1839, Charles Dickens published Nicholas Nickleby."]
-test_input[4] = ["Connecticut is The Constitution State.", "Hartford is the capital of Connecticut."]
-test_input[5] = ["To be or not to be, that is the question.", "To err is human; to really foul things up requires a computer."]
-test_input[6] = ["The Pythagorean Theorem says that the sum of the squares of the two legs equals the square of the hypotenuse.", "To find a leg using the Pythagorean Theorem, take the square root of the hypotenuse squared minus the other leg squared."]
-test_input[7] = ["Uncle Tom's Cabin was published by Harriet Beecher Stowe in 1852.", "In 1876, Mark Twain published The Adventures of Tom Sawyer."]
-test_input[8] = ["Once upon a midnight dreary while I pondered weak and weary,", "Over many a quaint and curious volume of forgotten lore."]
-test_input[9] = ["A tutor who tooted the flute tried to tutor two tooters to toot!", "Is it harder to toot or to tutor two tooters to toot?"]
+test_input[0] = [
+    "I am going home now",
+    "I will go home now"
+]
+test_input[1] = [
+    "The big black bear bit a big black bug",
+    "The big black bug bled black blood"
+]
+test_input[2] = [
+    "Complementary angle measures sum to 90 degrees.",
+    "The measures of supplementary angles add to 180 degrees."
+]
+test_input[3] = [
+    "A Tale of Two Cities was published by Dickens in 1859.",
+    "In 1839, Charles Dickens published Nicholas Nickleby."
+]
+test_input[4] = [
+    "Connecticut is The Constitution State.",
+    "Hartford is the capital of Connecticut."
+]
+test_input[5] = [
+    "To be or not to be, that is the question.",
+    "To err is human; to really foul things up requires a computer."
+]
+test_input[6] = [
+    "The Pythagorean Theorem says that the sum of the squares of the two legs equals the square of the hypotenuse.",
+    "To find a leg using the Pythagorean Theorem, take the square root of the hypotenuse squared minus the other leg squared."
+]
+test_input[7] = [
+    "Uncle Tom's Cabin was published by Harriet Beecher Stowe in 1852.",
+    "In 1876, Mark Twain published The Adventures of Tom Sawyer."
+]
+test_input[8] = [
+    "Once upon a midnight dreary while I pondered weak and weary,",
+    "Over many a quaint and curious volume of forgotten lore."
+]
+test_input[9] = [
+    "A tutor who tooted the flute tried to tutor two tooters to toot!",
+    "Is it harder to toot or to tutor two tooters to toot?"
+]
 
 test_output = [10, 19, 26, 18, 11, 14, 50, 20, 9, 31]
 
