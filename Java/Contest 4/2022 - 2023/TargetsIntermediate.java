@@ -9,6 +9,14 @@ import java.util.*;
 
 public class TargetsIntermediate {
 
+    /*
+     * Complete the 'targetsWithMostArrows' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     *  1. INTEGER size
+     *  2. STRING targets
+     */
     static String targetsWithMostArrows (int size, String targets) {
 
         boolean[][] grid = new boolean[size][size];

@@ -9,6 +9,16 @@ import java.util.*;
 
 public class TargetsSenior {
 
+    /*
+     * Complete the 'missingArrow' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     *  1. INTEGER size
+     *  2. STRING targets
+     *  3. STRING numbers
+     *  4. STRING arrows
+     */
     static String missingArrow (int size, String targets, String numbers, String arrows) {
 
         boolean[][] grid = new boolean[size][size];
