@@ -9,6 +9,14 @@ import java.util.*;
 
 public class FibonacciMandelbrotJunior {
 
+    /*
+     * Complete the 'absResult' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     * 1. FLOAT realPartC
+     * 2. FLOAT imagPartC
+     */
     static String absResult (float realPartC, float imagPartC) {
 
         float[] C = new float[]{realPartC, imagPartC};

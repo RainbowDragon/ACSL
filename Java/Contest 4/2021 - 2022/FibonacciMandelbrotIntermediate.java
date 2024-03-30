@@ -9,6 +9,14 @@ import java.util.*;
 
 public class FibonacciMandelbrotIntermediate {
 
+    /*
+     * Complete the 'cycleLength' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     * 1. FLOAT realPartC
+     * 2. FLOAT imagPartC
+     */
     static String cycleLength (float realPartC, float imagPartC) {
 
         double[] C = new double[]{(double)realPartC, (double)imagPartC};

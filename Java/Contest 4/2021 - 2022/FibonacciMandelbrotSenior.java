@@ -10,6 +10,17 @@ import java.util.*;
 
 public class FibonacciMandelbrotSenior {
 
+    /*
+     * Complete the 'numFibonacciCycles' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     * 1. FLOAT realPartLL
+     * 2. FLOAT imagPartLL
+     * 3. FLOAT realPartUR
+     * 4. FLOAT imagPartUR
+     * 5. FLOAT incr
+     */
     static int numFibonacciCycles (float realPartLL, float imagPartLL, float realPartUR, float imagPartUR, float incr) {
 
         int nx = Math.round((realPartUR - realPartLL) / incr);
