@@ -9,6 +9,13 @@ import java.util.*;
 
 public class GraphsIntermediate {
 
+    /*
+     * Complete the 'sumPathsOfLength2' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. STRING edges
+     */
     static int sumPathsOfLength2 (String edges) {
 
         boolean[][] graph = new boolean[10][10];

@@ -9,6 +9,14 @@ import java.util.*;
 
 public class GraphsJunior {
 
+    /*
+     * Complete the 'findCharacteristic' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER choice
+     *  2. STRING edges
+     */
     static int findCharacteristic (int choice, String edges) {
 
         boolean[][] graph = new boolean[10][10];

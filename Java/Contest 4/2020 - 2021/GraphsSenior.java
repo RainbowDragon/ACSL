@@ -9,6 +9,14 @@ import java.util.*;
 
 public class GraphsSenior {
 
+    /*
+     * Complete the 'sumPathsOfLengthN' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER num
+     *  2. STRING edges
+     */
     static int sumPathsOfLengthN (int num, String edges) {
 
         boolean[][] graph = new boolean[10][10];
