@@ -3,8 +3,6 @@
 #
 #
 
-import math
-
 #
 # Complete the 'absResult' function below.
 #
@@ -13,6 +11,9 @@ import math
 #  1. FLOAT realPartC
 #  2. FLOAT imagPartC
 #
+import math
+
+
 def abs_result(real_part_c, imag_part_c):
 
     c = [real_part_c, imag_part_c]
