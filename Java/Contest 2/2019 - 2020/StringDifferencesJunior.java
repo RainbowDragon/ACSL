@@ -93,17 +93,18 @@ public class StringDifferencesJunior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"MISSISSIPPI", "MISSOURI"};
-        input[1] = new String[]{"CATHERINE", "KATHERYNE"};
-        input[2] = new String[]{"CONSTITUTIONAL", "CONVENTIONAL"};
-        input[3] = new String[]{"COMPARTMENTALIZATION", "SEMIAUTOBIOGRAPHICAL"};
-        input[4] = new String[]{"PHYSICIAN", "PHARMACY"};
-        input[5] = new String[]{"FEEFIFOFUM", "FIDDLEDEEDEE"};
-        input[6] = new String[]{"MYLOLLIPOPS", "MYLARBALLOONS"};
-        input[7] = new String[]{"CONNECTICUTCT", "CONSTITUTIONSTATE"};
-        input[8] = new String[]{"MASSACHUSETTSBAYCOLONY", "MINUTEMANNATIONALHISTORICALPARK"};
-        input[9] = new String[]{"AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"};
+        String[][] input = {
+                {"MISSISSIPPI", "MISSOURI"},
+                {"CATHERINE", "KATHERYNE"},
+                {"CONSTITUTIONAL", "CONVENTIONAL"},
+                {"COMPARTMENTALIZATION", "SEMIAUTOBIOGRAPHICAL"},
+                {"PHYSICIAN", "PHARMACY"},
+                {"FEEFIFOFUM", "FIDDLEDEEDEE"},
+                {"MYLOLLIPOPS", "MYLARBALLOONS"},
+                {"CONNECTICUTCT", "CONSTITUTIONSTATE"},
+                {"MASSACHUSETTSBAYCOLONY", "MINUTEMANNATIONALHISTORICALPARK"},
+                {"AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"}
+        };
 
         String[] output = {"R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"};
 

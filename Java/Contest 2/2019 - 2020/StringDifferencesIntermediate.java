@@ -62,17 +62,18 @@ public class StringDifferencesIntermediate {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"BLAMEABLENESSES", "BLAMELESSNESSES"};
-        input[1] = new String[]{"MEZZAMINES", "RAZZMATAZZ"};
-        input[2] = new String[]{"ABBREVIATIONS", "ABBREVIATORS"};
-        input[3] = new String[]{"ABCDEFGHIJKLMNO", "ABKCLDZZHQJWWLX"};
-        input[4] = new String[]{"ABCDEFGHIJKL", "ABXEWFRRH"};
-        input[5] = new String[]{"MYARTLOLLIPOPS", "MYLARBALLOONS"};
-        input[6] = new String[]{"MASSACHUSETTSBAYCOLONY", "MINUTEMANNATIONALHISTORICALPARK"};
-        input[7] = new String[]{"LOWERMACTOWNSHIPPA", "CRANBERRYTOWNSHIPPA"};
-        input[8] = new String[]{"AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"};
-        input[9] = new String[]{"ABCDEFGHIJK", "ABDCEFGKILKJMN"};
+        String[][] input = {
+                {"BLAMEABLENESSES", "BLAMELESSNESSES"},
+                {"MEZZAMINES", "RAZZMATAZZ"},
+                {"ABBREVIATIONS", "ABBREVIATORS"},
+                {"ABCDEFGHIJKLMNO", "ABKCLDZZHQJWWLX"},
+                {"ABCDEFGHIJKL", "ABXEWFRRH"},
+                {"MYARTLOLLIPOPS", "MYLARBALLOONS"},
+                {"MASSACHUSETTSBAYCOLONY", "MINUTEMANNATIONALHISTORICALPARK"},
+                {"LOWERMACTOWNSHIPPA", "CRANBERRYTOWNSHIPPA"},
+                {"AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"},
+                {"ABCDEFGHIJK", "ABDCEFGKILKJMN"}
+        };
 
         int[] output = {-35, -5, -4, -86, -52, 23, 27, 11, 68, -9};
 
