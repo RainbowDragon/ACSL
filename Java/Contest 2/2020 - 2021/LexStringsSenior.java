@@ -87,17 +87,18 @@ public class LexStringsSenior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "This is an Example of Sorting an interesting string";
-        input[1] = "HackerRank.com was used for the ACSL Finals this year.";
-        input[2] = "The digits of PI are 3.141592653.";
-        input[3] = "She sells seashells by the seashore.";
-        input[4] = "Programming languages include Java, Python, C++, Visual BASIC, Ruby, and Scratch.";
-        input[5] = "COVID-19 is a global pandemic and a virus that changed everything in the entire world.";
-        input[6] = "The Computer Science Teacher Association had a virtual Conference in 2020.";
-        input[7] = "The digits of PI are 3.14159265358979323846264778327, not rounded.";
-        input[8] = "Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?";
-        input[9] = "There are 10 kinds of people: those who know binary and those who don't.";
+        String[] input = {
+                "This is an Example of Sorting an interesting string",
+                "HackerRank.com was used for the ACSL Finals this year.",
+                "The digits of PI are 3.141592653.",
+                "She sells seashells by the seashore.",
+                "Programming languages include Java, Python, C++, Visual BASIC, Ruby, and Scratch.",
+                "COVID-19 is a global pandemic and a virus that changed everything in the entire world.",
+                "The Computer Science Teacher Association had a virtual Conference in 2020.",
+                "The digits of PI are 3.14159265358979323846264778327, not rounded.",
+                "Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?",
+                "There are 10 kinds of people: those who know binary and those who don't."
+        };
 
         String[] output = {
                 "6in,4ts,3aegr,2o,1ESTfhlmpx",

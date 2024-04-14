@@ -62,17 +62,18 @@ public class LexStringsJunior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "A good sorting algorithm.";
-        input[1] = "Tennessee is the volunteer state.";
-        input[2] = "Einstein was a genius.";
-        input[3] = "Tom Sawyer & the Mississippi River";
-        input[4] = "She sells seashells by the seashore.";
-        input[5] = "Peter Piper picked a peck of pickled peppers.";
-        input[6] = "Computer Science Teachers Association had a virtual Conference in 2020.";
-        input[7] = "HackerRank.com was used for the ACSL Finals this past year.";
-        input[8] = "Programming languages include Java, Python, C++, BASIC, and Scratch.";
-        input[9] = "COVID-19 is a global pandemic and a virus that changed everything.";
+        String[] input = {
+                "A good sorting algorithm.",
+                "Tennessee is the volunteer state.",
+                "Einstein was a genius.",
+                "Tom Sawyer & the Mississippi River",
+                "She sells seashells by the seashore.",
+                "Peter Piper picked a peck of pickled peppers.",
+                "Computer Science Teachers Association had a virtual Conference in 2020.",
+                "HackerRank.com was used for the ACSL Finals this past year.",
+                "Programming languages include Java, Python, C++, BASIC, and Scratch.",
+                "COVID-19 is a global pandemic and a virus that changed everything."
+        };
 
         String[] output = {
                 "adghilmnorstagiortgo",
