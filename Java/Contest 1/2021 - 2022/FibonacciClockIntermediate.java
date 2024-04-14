@@ -65,19 +65,23 @@ public class FibonacciClockIntermediate {
 
     public static void main (String [] args) {
 
-        char[][] input = new char[10][];
-        input[0] = new char[]{'R', 'W', 'G', 'B', 'G'};
-        input[1] = new char[]{'W', 'B', 'B', 'G', 'R'};
-        input[2] = new char[]{'W', 'G', 'B', 'R', 'B'};
-        input[3] = new char[]{'G', 'G', 'B', 'B', 'B'};
-        input[4] = new char[]{'W', 'R', 'G', 'G', 'G'};
-        input[5] = new char[]{'G', 'R', 'W', 'B', 'B'};
-        input[6] = new char[]{'G', 'G', 'B', 'G', 'B'};
-        input[7] = new char[]{'R', 'R', 'R', 'R', 'R'};
-        input[8] = new char[]{'G', 'G', 'G', 'G', 'G'};
-        input[9] = new char[]{'W', 'B', 'B', 'B', 'B'};
+        char[][] input = {
+                {'R', 'W', 'G', 'B', 'G'},
+                {'W', 'B', 'B', 'G', 'R'},
+                {'W', 'G', 'B', 'R', 'B'},
+                {'G', 'G', 'B', 'B', 'B'},
+                {'W', 'R', 'G', 'G', 'G'},
+                {'G', 'R', 'W', 'B', 'B'},
+                {'G', 'G', 'B', 'G', 'B'},
+                {'R', 'R', 'R', 'R', 'R'},
+                {'G', 'G', 'G', 'G', 'G'},
+                {'W', 'B', 'B', 'B', 'B'}
+        };
 
-        String[] output = {"04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"};
+        String[] output = {
+                "04:50", "08:30", "10:40", "11:00", "01:50",
+                "09:45", "08:00", "00:00", "01:00", "11:55"
+        };
 
         for (int i = 0; i < 10; i++)
         {

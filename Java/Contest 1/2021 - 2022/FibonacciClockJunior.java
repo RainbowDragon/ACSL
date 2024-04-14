@@ -70,19 +70,23 @@ public class FibonacciClockJunior {
 
     public static void main (String [] args) {
 
-        char[][] input = new char[10][];
-        input[0] = new char[]{'R', 'W', 'G', 'B', 'G'};
-        input[1] = new char[]{'W', 'B', 'B', 'G', 'R'};
-        input[2] = new char[]{'B', 'G', 'B', 'B', 'R'};
-        input[3] = new char[]{'W', 'W', 'W', 'B', 'B'};
-        input[4] = new char[]{'W', 'R', 'G', 'G', 'G'};
-        input[5] = new char[]{'G', 'R', 'W', 'B', 'B'};
-        input[6] = new char[]{'R', 'B', 'B', 'W', 'G'};
-        input[7] = new char[]{'W', 'W', 'W', 'W', 'W'};
-        input[8] = new char[]{'B', 'W', 'W', 'G', 'R'};
-        input[9] = new char[]{'W', 'B', 'B', 'B', 'B'};
+        char[][] input = {
+                {'R', 'W', 'G', 'B', 'G'},
+                {'W', 'B', 'B', 'G', 'R'},
+                {'B', 'G', 'B', 'B', 'R'},
+                {'W', 'W', 'W', 'B', 'B'},
+                {'W', 'R', 'G', 'G', 'G'},
+                {'G', 'R', 'W', 'B', 'B'},
+                {'R', 'B', 'B', 'W', 'G'},
+                {'W', 'W', 'W', 'W', 'W'},
+                {'B', 'W', 'W', 'G', 'R'},
+                {'W', 'B', 'B', 'B', 'B'}
+        };
 
-        String[] output = {"04:50", "08:30", "11:35", "08:40", "01:50", "09:45", "04:40", "00:00", "06:20", "11:55"};
+        String[] output = {
+                "04:50", "08:30", "11:35", "08:40", "01:50",
+                "09:45", "04:40", "00:00", "06:20", "11:55"
+        };
 
         for (int i = 0; i < 10; i++)
         {
