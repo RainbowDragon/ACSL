@@ -25,7 +25,7 @@ public class ACSLBookIntermediate {
         ArrayList<String>[] wordlist = new ArrayList[n];
         for (int i = 0; i < n; i++)
         {
-            String[] words = sentenceList[i].trim().split("[^\\w]+");
+            String[] words = sentenceList[i].trim().split("\\W+");
             wordlist[i] = new ArrayList<>();
             for (String word : words)
             {
