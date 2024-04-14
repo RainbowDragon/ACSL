@@ -51,8 +51,7 @@ public class GraphsSenior {
         int result = 0;
         for (int i = 1; i < 10; i++)
         {
-            boolean next = graph[node][i];
-            if (next && !visited[i]) {
+            if (graph[node][i] && !visited[i]) {
                 visited[i] = true;
                 result += dfs(graph, visited, i, length + 1, maxLength, path * 10 + i);
                 visited[i] = false;
