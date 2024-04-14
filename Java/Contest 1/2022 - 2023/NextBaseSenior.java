@@ -44,17 +44,18 @@ public class NextBaseSenior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"15", "8", "2"};
-        input[1] = new String[]{"25", "2", "1111011"};
-        input[2] = new String[]{"20", "12", "9AB"};
-        input[3] = new String[]{"10", "16", "ABCDEF"};
-        input[4] = new String[]{"1000", "2", "1"};
-        input[5] = new String[]{"50", "4", "12"};
-        input[6] = new String[]{"75", "9", "384"};
-        input[7] = new String[]{"500", "14", "9CBA"};
-        input[8] = new String[]{"700", "11", "AAA0"};
-        input[9] = new String[]{"25", "2", "110000111010"};
+        String[][] input = {
+                {"15", "8", "2"},
+                {"25", "2", "1111011"},
+                {"20", "12", "9AB"},
+                {"10", "16", "ABCDEF"},
+                {"1000", "2", "1"},
+                {"50", "4", "12"},
+                {"75", "9", "384"},
+                {"500", "14", "9CBA"},
+                {"700", "11", "AAA0"},
+                {"25", "2", "110000111010"}
+        };
 
         int[] output = {9, 105, 14, 10, 4938, 42, 88, 336, 940, 165};
 

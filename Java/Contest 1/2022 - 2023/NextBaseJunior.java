@@ -41,17 +41,18 @@ public class NextBaseJunior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"15", "8", "2"};
-        input[1] = new String[]{"20", "3", "12"};
-        input[2] = new String[]{"25", "5", "324"};
-        input[3] = new String[]{"13", "9", "1652"};
-        input[4] = new String[]{"45", "2", "1111011"};
-        input[5] = new String[]{"1000", "8", "10"};
-        input[6] = new String[]{"50", "4", "13"};
-        input[7] = new String[]{"75", "9", "384"};
-        input[8] = new String[]{"100", "6", "555"};
-        input[9] = new String[]{"25", "2", "110000111010"};
+        String[][] input = {
+                {"15", "8", "2"},
+                {"20", "3", "12"},
+                {"25", "5", "324"},
+                {"13", "9", "1652"},
+                {"45", "2", "1111011"},
+                {"1000", "8", "10"},
+                {"50", "4", "13"},
+                {"75", "9", "384"},
+                {"100", "6", "555"},
+                {"25", "2", "110000111010"}
+        };
 
         int[] output = {65, 64, 189, 212, 170, 10948, 225, 876, 675, 135};
 
