@@ -98,17 +98,18 @@ public class VeitchSenior {
 
         String[] input = {"FF33", "00CC", "6090", "8810", "9008", "F0B8", "9699", "8DD8", "C3C3", "F111"};
 
-        String[] output = new String[10];
-        output[0] = "B+~A~B";
-        output[1] = "A~B";
-        output[2] = "BC~D+~B~CD";
-        output[3] = "AB~C+~A~B~CD";
-        output[4] = "B~C~D+A~B~C~D";
-        output[5] = "B~D+~A~BD+A~B~C";
-        output[6] = "~B~C+BCD+B~C~D";
-        output[7] = "A~C+ACD+~A~CD";
-        output[8] = "AB~D+~ABD+A~BD+~A~B~D";
-        output[9] = "B~D+~A~CD+~A~B~C~D";
+        String[] output = {
+                "B+~A~B",
+                "A~B",
+                "BC~D+~B~CD",
+                "AB~C+~A~B~CD",
+                "B~C~D+A~B~C~D",
+                "B~D+~A~BD+A~B~C",
+                "~B~C+BCD+B~C~D",
+                "A~C+ACD+~A~CD",
+                "AB~D+~ABD+A~BD+~A~B~D",
+                "B~D+~A~CD+~A~B~C~D"
+        };
 
         for (int i = 0; i < 10; i++)
         {

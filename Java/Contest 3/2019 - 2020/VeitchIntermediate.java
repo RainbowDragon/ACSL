@@ -82,17 +82,18 @@ public class VeitchIntermediate {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "AB+~AB+~A~B";
-        input[1] = "AB~C~D+AB~CD+~A~B~CD";
-        input[2] = "AB~C~D+~AB~C~D+A~B~C~D";
-        input[3] = "B~D+~B~D";
-        input[4] = "~A~BD+~A~B~D";
-        input[5] = "B~D+~A~BD+A~B~C";
-        input[6] = "~B~C+BCD+B~C~D";
-        input[7] = "A~C+ACD+~A~CD";
-        input[8] = "AB~D+~ABD+A~BD+~A~B~D";
-        input[9] = "B~D+~A~CD+~A~B~C~D";
+        String[] input = {
+                "AB+~AB+~A~B",
+                "AB~C~D+AB~CD+~A~B~CD",
+                "AB~C~D+~AB~C~D+A~B~C~D",
+                "B~D+~B~D",
+                "~A~BD+~A~B~D",
+                "B~D+~A~BD+A~B~C",
+                "~B~C+BCD+B~C~D",
+                "A~C+ACD+~A~CD",
+                "AB~D+~ABD+A~BD+~A~B~D",
+                "B~D+~A~CD+~A~B~C~D"
+        };
 
         String[] output = {"FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"};
 
