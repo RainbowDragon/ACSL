@@ -78,17 +78,18 @@ public class BinaryCountingJunior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "Roses are red.";
-        input[1] = "A is Alpha; B is Bravo; C is Charlie.";
-        input[2] = "A stitch in time saves nine.";
-        input[3] = "1, 2: Buckle my shoe! 3, 4: Shut the door!";
-        input[4] = "Is HackerRank the platform used by ACSL?";
-        input[5] = "What was the first computer programming language you learned?";
-        input[6] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.";
-        input[7] = "Knock, knock. Who is there? Hawaii. Hawaii who? I am good, Hawaii you?";
-        input[8] = "How do you use HackerRank to do each ACSL competition?";
-        input[9] = "~{w|x|y|z}";
+        String[] input = {
+                "Roses are red.",
+                "A is Alpha; B is Bravo; C is Charlie.",
+                "A stitch in time saves nine.",
+                "1, 2: Buckle my shoe! 3, 4: Shut the door!",
+                "Is HackerRank the platform used by ACSL?",
+                "What was the first computer programming language you learned?",
+                "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.",
+                "Knock, knock. Who is there? Hawaii. Hawaii who? I am good, Hawaii you?",
+                "How do you use HackerRank to do each ACSL competition?",
+                "~{w|x|y|z}"
+        };
 
         int[] output = {16, 20, 14, 30, 61, 61, 30, 64, 33, 20};
 

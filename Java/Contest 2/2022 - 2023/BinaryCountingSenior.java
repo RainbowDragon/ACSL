@@ -141,17 +141,18 @@ public class BinaryCountingSenior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "Roses are red.";
-        input[1] = "A is for Alpha; B is for Bravo; C is for Charlie.";
-        input[2] = "A stitch in time saves nine.";
-        input[3] = "1, 2: Buckle my shoe! 3, 4: Shut the door!";
-        input[4] = "The quick brown fox jumped over the lazy dogs.";
-        input[5] = "ACSL is 45 years old and going strong.";
-        input[6] = "What was the first computer programming language you learned?";
-        input[7] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.";
-        input[8] = "zyxwvutsrqponmlkjihgfedcba";
-        input[9] = "~{w|x|y|z}";
+        String[] input = {
+                "Roses are red.",
+                "A is for Alpha; B is for Bravo; C is for Charlie.",
+                "A stitch in time saves nine.",
+                "1, 2: Buckle my shoe! 3, 4: Shut the door!",
+                "The quick brown fox jumped over the lazy dogs.",
+                "ACSL is 45 years old and going strong.",
+                "What was the first computer programming language you learned?",
+                "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.",
+                "zyxwvutsrqponmlkjihgfedcba",
+                "~{w|x|y|z}",
+        };
 
         int[] output = {4, 9, 8, 6, 5, 6, 9, 9, 2, -1};
 

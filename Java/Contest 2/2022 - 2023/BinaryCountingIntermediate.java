@@ -90,17 +90,18 @@ public class BinaryCountingIntermediate {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "Roses are red.";
-        input[1] = "A is Alpha; B is Bravo; C is Charlie.";
-        input[2] = "A stitch in time saves nine.";
-        input[3] = "1, 2: Buckle my shoe! 3, 4: Shut the door!";
-        input[4] = "Is HackerRank the platform used by ACSL?";
-        input[5] = "The quick brown fox jumped over the lazy dogs.";
-        input[6] = "ACSL is 45 years old and going strong.";
-        input[7] = "What was the first computer programming language you learned?";
-        input[8] = "Supercalifragilisticexpialidocious!";
-        input[9] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.";
+        String[] input = {
+                "Roses are red.",
+                "A is Alpha; B is Bravo; C is Charlie.",
+                "A stitch in time saves nine.",
+                "1, 2: Buckle my shoe! 3, 4: Shut the door!",
+                "Is HackerRank the platform used by ACSL?",
+                "The quick brown fox jumped over the lazy dogs.",
+                "ACSL is 45 years old and going strong.",
+                "What was the first computer programming language you learned?",
+                "Supercalifragilisticexpialidocious!",
+                "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz."
+        };
 
         int[] output = {12, 20, 14, 22, 27, 29, 27, 30, 20, 26};
 
