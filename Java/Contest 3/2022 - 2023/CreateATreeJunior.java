@@ -65,29 +65,31 @@ public class CreateATreeJunior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "PYTHONN";
-        input[1] = "BINARYSEARCHTREE";
-        input[2] = "CORONAVIRUS";
-        input[3] = "FINALSFORACSL";
-        input[4] = "HACKERRANKPLATFORM";
-        input[5] = "MOTHER";
-        input[6] = "ACSLCONTEST";
-        input[7] = "SUPERCALIFRAGILISTIC";
-        input[8] = "JAVAPROGRAMMING";
-        input[9] = "ABDFHKMOQTVWYZ";
+        String[] input = {
+                "PYTHONN",
+                "BINARYSEARCHTREE",
+                "CORONAVIRUS",
+                "FINALSFORACSL",
+                "HACKERRANKPLATFORM",
+                "MOTHER",
+                "ACSLCONTEST",
+                "SUPERCALIFRAGILISTIC",
+                "JAVAPROGRAMMING",
+                "ABDFHKMOQTVWYZ"
+        };
 
-        String[] output = new String[10];
-        output[0] = "PHYOTNN";
-        output[1] = "BAIAENCHRERYERST";
-        output[2] = "CAOORNRVIUS";
-        output[3] = "FAIAFNCLSLORS";
-        output[4] = "HAKACKRAERTFNLPMOR";
-        output[5] = "MHOETR";
-        output[6] = "ACCSLTEOTNS";
-        output[7] = "SPUERTCLRSAIACFLGIII";
-        output[8] = "JAVAGPAGIORMRMN";
-        output[9] = "ABDFHKMOQTVWYZ";
+        String[] output = {
+                "PHYOTNN",
+                "BAIAENCHRERYERST",
+                "CAOORNRVIUS",
+                "FAIAFNCLSLORS",
+                "HAKACKRAERTFNLPMOR",
+                "MHOETR",
+                "ACCSLTEOTNS",
+                "SPUERTCLRSAIACFLGIII",
+                "JAVAGPAGIORMRMN",
+                "ABDFHKMOQTVWYZ"
+        };
 
         for (int i = 0; i < 10; i++)
         {

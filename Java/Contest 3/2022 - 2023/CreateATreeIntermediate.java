@@ -97,29 +97,31 @@ public class CreateATreeIntermediate {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "PYTHONN";
-        input[1] = "BINARYSEARCHTREE";
-        input[2] = "CORONAVIRUS";
-        input[3] = "FINALSFORACSL";
-        input[4] = "HACKERRANKPLATFORM";
-        input[5] = "MOTHER";
-        input[6] = "ACSLCONTEST";
-        input[7] = "SUPERCALIFRAGILISTIC";
-        input[8] = "JAVAPROGRAMMING";
-        input[9] = "ABDFHKMOQTVWYZ";
+        String[] input = {
+                "PYTHONN",
+                "BINARYSEARCHTREE",
+                "CORONAVIRUS",
+                "FINALSFORACSL",
+                "HACKERRANKPLATFORM",
+                "MOTHER",
+                "ACSLCONTEST",
+                "SUPERCALIFRAGILISTIC",
+                "JAVAPROGRAMMING",
+                "ABDFHKMOQTVWYZ"
+        };
 
-        String[] output = new String[10];
-        output[0] = "NOY H";
-        output[1] = "AERY CNS";
-        output[2] = "NOUV NONE";
-        output[3] = "FLS IOR";
-        output[4] = "AR CEL";
-        output[5] = "HT O";
-        output[6] = "T A";
-        output[7] = "CIILU FG";
-        output[8] = "AORV NONE";
-        output[9] = "NONE ABDFHKMOQTVWY";
+        String[] output = {
+                "NOY H",
+                "AERY CNS",
+                "NOUV NONE",
+                "FLS IOR",
+                "AR CEL",
+                "HT O",
+                "T A",
+                "CIILU FG",
+                "AORV NONE",
+                "NONE ABDFHKMOQTVWY"
+        };
 
         for (int i = 0; i < 10; i++)
         {

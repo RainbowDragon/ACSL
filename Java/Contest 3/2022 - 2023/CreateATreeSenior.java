@@ -100,29 +100,31 @@ public class CreateATreeSenior {
 
     public static void main (String [] args) {
 
-        String[] input = new String[10];
-        input[0] = "PYTHONN";
-        input[1] = "BINARYSEARCHTREE";
-        input[2] = "CORONAVIRUS";
-        input[3] = "FINALSFORACSL";
-        input[4] = "HACKERRANKPLATFORM";
-        input[5] = "MOTHER";
-        input[6] = "ACSLCONTEST";
-        input[7] = "SUPERCALIFRAGILISTIC";
-        input[8] = "JAVAPROGRAMMING";
-        input[9] = "ABDFHKMOQTVWYZ";
+        String[] input = {
+                "PYTHONN",
+                "BINARYSEARCHTREE",
+                "CORONAVIRUS",
+                "FINALSFORACSL",
+                "HACKERRANKPLATFORM",
+                "MOTHER",
+                "ACSLCONTEST",
+                "SUPERCALIFRAGILISTIC",
+                "JAVAPROGRAMMING",
+                "ABDFHKMOQTVWYZ"
+        };
 
-        String[] output = new String[10];
-        output[0] = "PHONNYT NNOHTYP";
-        output[1] = "BAAIECEEHNRRRYST AAEECHERRTSYRNIB";
-        output[2] = "CAOONIRRVUS AINORSUVROC";
-        output[3] = "FAAFCINLLSORS ACFALLSROSNIF";
-        output[4] = "HAAACEFKKRRNLMPORT AAFECAKMLORPNRTRKH";
-        output[5] = "MHEOTR EHRTOM";
-        output[6] = "ACCSLEONSTT CENSOLTTSCA";
-        output[7] = "SPECAACLIFGIIILRRSUT ACACIIIGFLILERSRPTUS";
-        output[8] = "JAAAGGIVPOMMNRR AAGIGAMNMORRPVJ";
-        output[9] = "ABDFHKMOQTVWYZ ZYWVTQOMKHFDBA";
+        String[] output = {
+                "PHONNYT NNOHTYP",
+                "BAAIECEEHNRRRYST AAEECHERRTSYRNIB",
+                "CAOONIRRVUS AINORSUVROC",
+                "FAAFCINLLSORS ACFALLSROSNIF",
+                "HAAACEFKKRRNLMPORT AAFECAKMLORPNRTRKH",
+                "MHEOTR EHRTOM",
+                "ACCSLEONSTT CENSOLTTSCA",
+                "SPECAACLIFGIIILRRSUT ACACIIIGFLILERSRPTUS",
+                "JAAAGGIVPOMMNRR AAGIGAMNMORRPVJ",
+                "ABDFHKMOQTVWYZ ZYWVTQOMKHFDBA"
+        };
 
         for (int i = 0; i < 10; i++)
         {
