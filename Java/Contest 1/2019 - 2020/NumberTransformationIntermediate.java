@@ -48,17 +48,18 @@ public class NumberTransformationIntermediate {
 
     public static void main (String [] args) {
 
-        long[][] input = new long[10][];
-        input[0] = new long[]{296351L, 5};
-        input[1] = new long[]{762184L, 3};
-        input[2] = new long[]{45873216L, 7};
-        input[3] = new long[]{19750418L, 6};
-        input[4] = new long[]{386257914L, 5};
-        input[5] = new long[]{4318672L, 4};
-        input[6] = new long[]{35197545L, 1};
-        input[7] = new long[]{975318642L, 9};
-        input[8] = new long[]{9876543210L, 5};
-        input[9] = new long[]{314159265358L, 10};
+        long[][] input = {
+                {296351L, 5},
+                {762184L, 3},
+                {45873216L, 7},
+                {19750418L, 6},
+                {386257914L, 5},
+                {4318672L, 4},
+                {35197545L, 1},
+                {975318642L, 9},
+                {9876543210L, 5},
+                {314159265358L, 10}
+        };
 
         long[] output = {
                 193648L, 873173L, 95322341L, 86727361L, 831752441L,

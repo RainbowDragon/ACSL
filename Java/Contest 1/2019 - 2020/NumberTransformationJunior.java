@@ -55,17 +55,18 @@ public class NumberTransformationJunior {
 
     public static void main (String [] args) {
 
-        long[][] input = new long[10][];
-        input[0] = new long[]{124987L, 2, 3};
-        input[1] = new long[]{540670L, 3, 9};
-        input[2] = new long[]{7145042L, 2, 8};
-        input[3] = new long[]{124987L, 2, 523};
-        input[4] = new long[]{4386709L, 1, 2};
-        input[5] = new long[]{4318762L, 4, 3};
-        input[6] = new long[]{72431685L, 1, 7};
-        input[7] = new long[]{123456789L, 7, 8};
-        input[8] = new long[]{9876543210L, 10, 25};
-        input[9] = new long[]{314159265358L, 8, 428};
+        long[][] input = {
+                {124987L, 2, 3},
+                {540670L, 3, 9},
+                {7145042L, 2, 8},
+                {124987L, 2, 523},
+                {4386709L, 1, 2},
+                {4318762L, 4, 3},
+                {72431685L, 1, 7},
+                {123456789L, 7, 8},
+                {9876543210L, 10, 25},
+                {314159265358L, 8, 428}
+        };
 
         long[] output = {
                 124950L, 540300L, 7145020L, 124950L, 4386707L,

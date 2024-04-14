@@ -82,17 +82,18 @@ public class NumberTransformationSenior {
 
     public static void main (String [] args) {
 
-        long[][] input = new long[10][];
-        input[0] = new long[]{102438L, 3};
-        input[1] = new long[]{4329L, 1};
-        input[2] = new long[]{6710L, 2};
-        input[3] = new long[]{16807L, 1};
-        input[4] = new long[]{60098065452L, 7};
-        input[5] = new long[]{43287L, 3};
-        input[6] = new long[]{72431685L, 1};
-        input[7] = new long[]{246897531573L, 12};
-        input[8] = new long[]{96783L, 5};
-        input[9] = new long[]{16058314729L, 3};
+        long[][] input = {
+                {102438L, 3},
+                {4329L, 1},
+                {6710L, 2},
+                {16807L, 1},
+                {60098065452L, 7},
+                {43287L, 3},
+                {72431685L, 1},
+                {246897531573L, 12},
+                {96783L, 5},
+                {16058314729L, 3}
+        };
 
         long[] output = {
                 546414L, 1312113L, 7841L, 8131571L, 1488173823436L,
