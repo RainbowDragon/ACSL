@@ -77,17 +77,18 @@ public class NumeralTrianglesSenior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"A", "9", "5"};
-        input[1] = new String[]{"ABC", "F", "4"};
-        input[2] = new String[]{"BAD", "50", "10"};
-        input[3] = new String[]{"FED", "ABC", "25"};
-        input[4] = new String[]{"184", "231", "35"};
-        input[5] = new String[]{"ABE", "CAB", "40"};
-        input[6] = new String[]{"31415", "92653", "60"};
-        input[7] = new String[]{"DEAF", "BED", "72"};
-        input[8] = new String[]{"BAD", "DAD", "100"};
-        input[9] = new String[]{"704", "1776", "244"};
+        String[][] input = {
+                {"A", "9", "5"},
+                {"ABC", "F", "4"},
+                {"BAD", "50", "10"},
+                {"FED", "ABC", "25"},
+                {"184", "231", "35"},
+                {"ABE", "CAB", "40"},
+                {"31415", "92653", "60"},
+                {"DEAF", "BED", "72"},
+                {"BAD", "DAD", "100"},
+                {"704", "1776", "244"}
+        };
 
         String[] output = {"5", "C", "A", "F", "5", "5", "F", "3", "A", "E"};
 

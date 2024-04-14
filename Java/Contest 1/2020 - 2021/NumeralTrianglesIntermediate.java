@@ -66,17 +66,18 @@ public class NumeralTrianglesIntermediate {
 
     public static void main (String [] args) {
 
-        int[][] input = new int[10][];
-        input[0] = new int[]{2, 3, 5};
-        input[1] = new int[]{221, 2, 4};
-        input[2] = new int[]{1, 4, 20};
-        input[3] = new int[]{10, 10, 10};
-        input[4] = new int[]{3245, 5, 11};
-        input[5] = new int[]{4567, 7, 65};
-        input[6] = new int[]{3141, 5, 26};
-        input[7] = new int[]{765, 43, 21};
-        input[8] = new int[]{704, 1776, 20};
-        input[9] = new int[]{77, 7, 100};
+        int[][] input = {
+                {2, 3, 5},
+                {221, 2, 4},
+                {1, 4, 20},
+                {10, 10, 10},
+                {3245, 5, 11},
+                {4567, 7, 65},
+                {3141, 5, 26},
+                {765, 43, 21},
+                {704, 1776, 20},
+                {77, 7, 100}
+        };
 
         int[] output = {36, 38, 230, 99, 178, 1038, 429, 329, 374, 1547};
 
