@@ -54,17 +54,18 @@ public class FibonacciCypherJunior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"h", "ACSL c2"};
-        input[1] = new String[]{"s", "Python Programming"};
-        input[2] = new String[]{"a", "Fibonacci Numbers"};
-        input[3] = new String[]{"j", "Help ME!"};
-        input[4] = new String[]{"z", "It is 9:30 in the morning."};
-        input[5] = new String[]{"h", "ACSL Contest 2"};
-        input[6] = new String[]{"b", "Madam, I'm Adam!"};
-        input[7] = new String[]{"a", "Java programs are the best."};
-        input[8] = new String[]{"d", "What are we really doing?"};
-        input[9] = new String[]{"g", "This is the Fibonacci Cypher!"};
+        String[][] input = {
+                {"h", "ACSL c2"},
+                {"s", "Python Programming"},
+                {"a", "Fibonacci Numbers"},
+                {"j", "Help ME!"},
+                {"z", "It is 9:30 in the morning."},
+                {"h", "ACSL Contest 2"},
+                {"b", "Madam, I'm Adam!"},
+                {"a", "Java programs are the best."},
+                {"d", "What are we really doing?"},
+                {"g", "This is the Fibonacci Cypher!"}
+        };
 
         String[] output = {
                 "170 173 190 185 144 216 149",

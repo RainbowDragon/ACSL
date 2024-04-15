@@ -56,17 +56,18 @@ public class FibonacciCypherIntermediate {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"3", "7", "h", "ACSL c2"};
-        input[1] = new String[]{"4", "9", "s", "Python Programming is easier than programming in Java."};
-        input[2] = new String[]{"2", "5", "a", "Fibonacci Numbers are found in many places including the Mandelbrot Set."};
-        input[3] = new String[]{"0", "1", "j", "Help ME figure out how to solve this problem!"};
-        input[4] = new String[]{"4", "8", "z", "It is 9:30 in the morning EST, but 6:30 on the West Coast."};
-        input[5] = new String[]{"1", "2", "a", "Fibonacci cyphers are fun to encode and decode."};
-        input[6] = new String[]{"4", "7", "x", "You may only use C++, Java, and Python in HackerRank."};
-        input[7] = new String[]{"7", "10", "p", "Madam, I'm Adam is one of the most common palindromes."};
-        input[8] = new String[]{"16", "9", "l", "What happens when the first number is greater than the second?"};
-        input[9] = new String[]{"11", "13", "q", "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."};
+        String[][] input = {
+                {"3", "7", "h", "ACSL c2"},
+                {"4", "9", "s", "Python Programming is easier than programming in Java."},
+                {"2", "5", "a", "Fibonacci Numbers are found in many places including the Mandelbrot Set."},
+                {"0", "1", "j", "Help ME figure out how to solve this problem!"},
+                {"4", "8", "z", "It is 9:30 in the morning EST, but 6:30 on the West Coast."},
+                {"1", "2", "a", "Fibonacci cyphers are fun to encode and decode."},
+                {"4", "7", "x", "You may only use C++, Java, and Python in HackerRank."},
+                {"7", "10", "p", "Madam, I'm Adam is one of the most common palindromes."},
+                {"16", "9", "l", "What happens when the first number is greater than the second?"},
+                {"11", "13", "q", "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."}
+        };
 
         String[] output = {
                 "386 400 425 439 347 465 341",
