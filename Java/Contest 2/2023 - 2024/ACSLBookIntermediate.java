@@ -131,18 +131,18 @@ public class ACSLBookIntermediate {
                 "1.1.1 2.6.2 5.8.10 5.13.5 3.6.1 1.6.2 2.9.2 1.11.1 1.2.1 4.6.2 5.4.2 1.2.5 5.2.3 4.13.3 1.4.2 1.15.1 4.4.3 6.1.1 4.3.1 1.7.1 3.17.1"
         };
 
-        String[] output = new String[10];
-        output[0] = "python 3";
-        output[1] = "Boolean is always True";
-        output[2] = "Java is the language of AP CS";
-        output[3] = "No 1 speech of all time";
-        output[4] = "what are you";
-        output[5] = "American Computer Science League ACSL is fun";
-        output[6] = "Live life pursue happiness be free";
-        output[7] = "AI is here to stay";
-        output[8] = "AI is even scary for IT geniuses";
-        output[9] = "Try 8x squared is 170";
-
+        String[] output = {
+                "python 3",
+                "Boolean is always True",
+                "Java is the language of AP CS",
+                "No 1 speech of all time",
+                "what are you",
+                "American Computer Science League ACSL is fun",
+                "Live life pursue happiness be free",
+                "AI is here to stay",
+                "AI is even scary for IT geniuses",
+                "Try 8x squared is 170"
+        };
 
         for (int i = 0; i < 10; i++)
         {
