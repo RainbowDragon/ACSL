@@ -95,7 +95,10 @@ public class VeitchIntermediate {
                 "B~D+~A~CD+~A~B~C~D"
         };
 
-        String[] output = {"FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"};
+        String[] output = {
+                "FF33", "8810", "9008", "F00F", "0033",
+                "F0B8", "9699", "8DD8", "C3C3", "F111"
+        };
 
         for (int i = 0; i < 10; i++)
         {
