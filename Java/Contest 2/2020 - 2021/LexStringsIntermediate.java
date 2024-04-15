@@ -83,17 +83,18 @@ public class LexStringsIntermediate {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{"MBAMMDXXMMMGGMMZ", "3"};
-        input[1] = new String[]{"MHHHHJLDDHHDDD", "3"};
-        input[2] = new String[]{"THETENNESSEEVOLUNTEERS", "2"};
-        input[3] = new String[]{"MISSISSIPPI", "3"};
-        input[4] = new String[]{"BOOOKEEEPEEERR", "4"};
-        input[5] = new String[]{"BOOOKEEEPEERBBBBUZZZOOKEEEEPEER", "2"};
-        input[6] = new String[]{"MASSACHUSETTSVSMISSISSIPPI", "2"};
-        input[7] = new String[]{"OOOOZESSPPOOOOOYYYSSSUPY", "4"};
-        input[8] = new String[]{"SHESELLSSEASHELLSANDBALLOONS", "3"};
-        input[9] = new String[]{"HHHGGRDDCFFFGGGTTTYUIKJHHH", "1"};
+        String[][] input = {
+                {"MBAMMDXXMMMGGMMZ", "3"},
+                {"MHHHHJLDDHHDDD", "3"},
+                {"THETENNESSEEVOLUNTEERS", "2"},
+                {"MISSISSIPPI", "3"},
+                {"BOOOKEEEPEEERR", "4"},
+                {"BOOOKEEEPEERBBBBUZZZOOKEEEEPEER", "2"},
+                {"MASSACHUSETTSVSMISSISSIPPI", "2"},
+                {"OOOOZESSPPOOOOOYYYSSSUPY", "4"},
+                {"SHESELLSSEASHELLSANDBALLOONS", "3"},
+                {"HHHGGRDDCFFFGGGTTTYUIKJHHH", "1"}
+        };
 
         String[] output = {
                 "MMMGGMMMXXABDMZ",
