@@ -20,7 +20,7 @@ public class ACSLBookJunior {
      */
     static String decodeMessage (String text, String message) {
 
-        String[] sentenceList = text.split(Pattern.quote("."));
+        String[] sentenceList = text.split("[.]");
         int n = sentenceList.length;
         ArrayList<String>[] wordlist = new ArrayList[n];
         for (int i = 0; i < n; i++)
