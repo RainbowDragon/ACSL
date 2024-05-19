@@ -150,17 +150,18 @@ public class FibonacciMandelbrotSenior {
 
     public static void main (String [] args) {
 
-        float[][] input = new float[10][];
-        input[0] = new float[]{0.1f, 0.2f, 0.4f, 0.35f, 0.075f};
-        input[1] = new float[]{-0.1f, -0.1f, 0.0f, 0.1f, 0.05f};
-        input[2] = new float[]{-2.5f, -1.0f, -2.0f, 0.0f, 0.05f};
-        input[3] = new float[]{-0.1f, -0.3f, -0.05f, -0.2f, 0.005f};
-        input[4] = new float[]{-0.3f, -0.3f, 0.2f, 0.2f, 0.1f};
-        input[5] = new float[]{-1.5f, -1.5f, 1.5f, 1.5f, 0.2f};
-        input[6] = new float[]{-0.4f, -0.3f, 0.4f, 0.3f, 0.06f};
-        input[7] = new float[]{0.175f, -0.1f, 0.235f, 0.4f, 0.006f};
-        input[8] = new float[]{-0.2f, -0.2f, 0.0f, 0.5f, 0.02f};
-        input[9] = new float[]{-0.375f, -0.1f, 0.075f, 0.5f, 0.025f};
+        float[][] input = {
+                {0.1f, 0.2f, 0.4f, 0.35f, 0.075f},
+                {-0.1f, -0.1f, 0.0f, 0.1f, 0.05f},
+                {-2.5f, -1.0f, -2.0f, 0.0f, 0.05f},
+                {-0.1f, -0.3f, -0.05f, -0.2f, 0.005f},
+                {-0.3f, -0.3f, 0.2f, 0.2f, 0.1f},
+                {-1.5f, -1.5f, 1.5f, 1.5f, 0.2f},
+                {-0.4f, -0.3f, 0.4f, 0.3f, 0.06f},
+                {0.175f, -0.1f, 0.235f, 0.4f, 0.006f},
+                {-0.2f, -0.2f, 0.0f, 0.5f, 0.02f},
+                {-0.375f, -0.1f, 0.075f, 0.5f, 0.025f}
+        };
 
         int[] output = {9, 15, 1, 222, 34, 30, 127, 764, 388, 456};
 

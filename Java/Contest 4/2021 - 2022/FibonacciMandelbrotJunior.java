@@ -76,29 +76,14 @@ public class FibonacciMandelbrotJunior {
 
     public static void main (String [] args) {
 
-        float[][] input = new float[10][];
-        input[0] = new float[]{0.3f, -0.67f};
-        input[1] = new float[]{2.0f, -0.3f};
-        input[2] = new float[]{-0.5f, 0.56f};
-        input[3] = new float[]{-0.62f, 0.43f};
-        input[4] = new float[]{0.0f, 0.543f};
-        input[5] = new float[]{0.45f, -0.56f};
-        input[6] = new float[]{-0.325f, 0.765f};
-        input[7] = new float[]{0.561f, -0.456f};
-        input[8] = new float[]{-0.213f, 0.729f};
-        input[9] = new float[]{-0.053f, 0.0f};
+        float[][] input = {
+                {0.3f, -0.67f}, {2.0f, -0.3f}, {-0.5f, 0.56f}, {-0.62f, 0.43f}, {0.0f, 0.543f},
+                {0.45f, -0.56f}, {-0.325f, 0.765f}, {0.561f, -0.456f}, {-0.213f, 0.729f}, {-0.053f, 0.0f}
+        };
 
         String[] output = {
-                "0.817",
-                "ESCAPES 2",
-                "0.018",
-                "0.508",
-                "0.574",
-                "2.153",
-                "1.057",
-                "ESCAPES 5",
-                "0.834",
-                "0.050"
+                "0.817", "ESCAPES 2", "0.018", "0.508", "0.574",
+                "2.153", "1.057", "ESCAPES 5", "0.834", "0.050"
         };
 
         for (int i = 0; i < 10; i++)
