@@ -22,20 +22,17 @@ public class FibonacciClockJunior {
      */
     static String findTime (char c1, char c2, char c3, char c4, char c5) {
 
+        char[] colors = {c1, c2, c3, c4, c5};
+        int[] deltas = {1, 1, 2, 3, 5};
+
         int hour = 0;
         int minute = 0;
 
-        hour += addHour(c1, 1);
-        hour += addHour(c2, 1);
-        hour += addHour(c3, 2);
-        hour += addHour(c4, 3);
-        hour += addHour(c5, 5);
-
-        minute += addMinute(c1, 1);
-        minute += addMinute(c2, 1);
-        minute += addMinute(c3, 2);
-        minute += addMinute(c4, 3);
-        minute += addMinute(c5, 5);
+        for (int i = 0; i < 5; i++)
+        {
+            hour += addHour(colors[i], deltas[i]);
+            minute += addMinute(colors[i], deltas[i]);
+        }
         minute *= 5;
 
         String strHour = Integer.toString(hour);

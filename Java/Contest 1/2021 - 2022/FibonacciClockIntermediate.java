@@ -30,16 +30,8 @@ public class FibonacciClockIntermediate {
 
         for (int i = 0; i < 5; i++)
         {
-            if (colors[i] == 'R') {
-                hour += deltas[i];
-            }
-            else if (colors[i] == 'G') {
-                minute += deltas[i];
-            }
-            else if (colors[i] == 'B') {
-                hour += deltas[i];
-                minute += deltas[i];
-            }
+            hour += addHour(colors[i], deltas[i]);
+            minute += addMinute(colors[i], deltas[i]);
         }
         minute *= 5;
 
@@ -61,6 +53,22 @@ public class FibonacciClockIntermediate {
         }
 
         return strHour + ":" + strMinute;
+    }
+
+    static int addHour (char color, int delta) {
+
+        if (color == 'R' || color == 'B') {
+            return delta;
+        }
+        return 0;
+    }
+
+    static int addMinute (char color, int delta) {
+
+        if (color == 'G' || color == 'B') {
+            return delta;
+        }
+        return 0;
     }
 
     public static void main (String [] args) {

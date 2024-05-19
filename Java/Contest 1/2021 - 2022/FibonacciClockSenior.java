@@ -27,27 +27,9 @@ public class FibonacciClockSenior {
         {
             char color = cstr.charAt(i);
 
-            if (color == 'R') {
-                hour += deltas[i];
-            }
-            else if (color == 'G') {
-                minute += deltas[i];
-            }
-            else if (color == 'B') {
-                second += deltas[i];
-            }
-            else if (color == 'Y') {
-                hour += deltas[i];
-                minute += deltas[i];
-            }
-            else if (color == 'M') {
-                hour += deltas[i];
-                second += deltas[i];
-            }
-            else if (color == 'C') {
-                minute += deltas[i];
-                second += deltas[i];
-            }
+            hour += addHour(color, deltas[i]);
+            minute += addMinute(color, deltas[i]);
+            second += addSecond(color, deltas[i]);
         }
         minute *= 5;
         second *= 5;
@@ -80,6 +62,30 @@ public class FibonacciClockSenior {
         }
 
         return strHour + ":" + strMinute + ":" + strSecond;
+    }
+
+    static int addHour (char color, int delta) {
+
+        if (color == 'R' || color == 'Y' || color == 'M') {
+            return delta;
+        }
+        return 0;
+    }
+
+    static int addMinute (char color, int delta) {
+
+        if (color == 'G' || color == 'Y' || color == 'C') {
+            return delta;
+        }
+        return 0;
+    }
+
+    static int addSecond (char color, int delta) {
+
+        if (color == 'B' || color == 'M' || color == 'C') {
+            return delta;
+        }
+        return 0;
     }
 
     public static void main (String [] args) {
