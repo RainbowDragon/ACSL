@@ -65,9 +65,7 @@ public class ACSLRackOSenior {
                     rackList[result2[1]] = card;
                 }
             }
-
-            // System.out.println(getRackAsString(rackList) + " | " + card + " " + result1[0] + ":" + result1[1] + " " + result2[0] + ":" + result2[1]);
-
+            
             if (isRackInOrder(rackList)) {
                 return getRackAsString(rackList);
             }
