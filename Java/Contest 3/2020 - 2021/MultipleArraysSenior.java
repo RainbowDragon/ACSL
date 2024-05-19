@@ -188,8 +188,7 @@ public class MultipleArraysSenior {
 
         for (int i = 0; i < 8; i++)
         {
-            List<String> arrays = new ArrayList<>();
-            arrays.addAll(Arrays.asList(input[i]).subList(1, input[i].length));
+            List<String> arrays = new ArrayList<>(Arrays.asList(input[i]).subList(1, input[i].length));
 
             int result = sumOfMinAlongPath(input[i][0], arrays);
 
