@@ -86,7 +86,9 @@ test_input = [
     ["AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"]
 ]
 
-test_output = ["R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"]
+test_output = [
+    "R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"
+]
 
 for i in range(10):
     test_result = string_differences(test_input[i][0], test_input[i][1])

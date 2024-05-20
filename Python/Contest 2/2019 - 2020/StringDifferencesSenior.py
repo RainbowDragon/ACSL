@@ -99,7 +99,9 @@ test_input = [
     ]
 ]
 
-test_output = [10, 19, 26, 18, 11, 14, 50, 20, 9, 31]
+test_output = [
+    10, 19, 26, 18, 11, 14, 50, 20, 9, 31
+]
 
 for i in range(10):
     test_result = difference_factor(test_input[i][0], test_input[i][1])
