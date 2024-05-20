@@ -110,7 +110,9 @@ public class GraphsJunior {
                 {"3", "55 77 45 54"}
         };
 
-        int[] output = {25, 5, 49, 10, 50, 0, 42, 24, 52, 6};
+        int[] output = {
+                25, 5, 49, 10, 50, 0, 42, 24, 52, 6
+        };
 
         for (int i = 0; i < 10; i++)
         {
