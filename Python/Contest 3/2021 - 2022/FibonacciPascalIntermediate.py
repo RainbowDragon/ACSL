@@ -48,17 +48,10 @@ def get_fibonacci_index(fib):
 
 test_input = [8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903]
 
-test_output = [""] * 10
-test_output[0] = "2 1 4"
-test_output[1] = "5 1 35"
-test_output[2] = "4 4 210"
-test_output[3] = "8 3 3003"
-test_output[4] = "3 11 77520"
-test_output[5] = "3 2 21"
-test_output[6] = "5 4 495"
-test_output[7] = "4 11 203490"
-test_output[8] = "9 9 2042975"
-test_output[9] = "7 16 354817320"
+test_output = [
+    "2 1 4", "5 1 35", "4 4 210", "8 3 3003", "3 11 77520",
+    "3 2 21", "5 4 495", "4 11 203490", "9 9 2042975", "7 16 354817320"
+]
 
 for i in range(10):
     test_result = find_odd_even_max(test_input[i])
