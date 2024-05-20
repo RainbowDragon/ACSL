@@ -34,17 +34,18 @@ def fib_cypher(num1, num2, key, msg):
     return result
 
 
-test_input = [[""] * 4] * 10
-test_input[0] = [3, 7, "h", "ACSL c2"]
-test_input[1] = [4, 9, "s", "Python Programming is easier than programming in Java."]
-test_input[2] = [2, 5, "a", "Fibonacci Numbers are found in many places including the Mandelbrot Set."]
-test_input[3] = [0, 1, "j", "Help ME figure out how to solve this problem!"]
-test_input[4] = [4, 8, "z", "It is 9:30 in the morning EST, but 6:30 on the West Coast."]
-test_input[5] = [1, 2, "a", "Fibonacci cyphers are fun to encode and decode."]
-test_input[6] = [4, 7, "x", "You may only use C++, Java, and Python in HackerRank."]
-test_input[7] = [7, 10, "p", "Madam, I'm Adam is one of the most common palindromes."]
-test_input[8] = [16, 9, "l", "What happens when the first number is greater than the second?"]
-test_input[9] = [11, 13, "q", "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."]
+test_input = [
+    [3, 7, "h", "ACSL c2"],
+    [4, 9, "s", "Python Programming is easier than programming in Java."],
+    [2, 5, "a", "Fibonacci Numbers are found in many places including the Mandelbrot Set."],
+    [0, 1, "j", "Help ME figure out how to solve this problem!"],
+    [4, 8, "z", "It is 9:30 in the morning EST, but 6:30 on the West Coast."],
+    [1, 2, "a", "Fibonacci cyphers are fun to encode and decode."],
+    [4, 7, "x", "You may only use C++, Java, and Python in HackerRank."],
+    [7, 10, "p", "Madam, I'm Adam is one of the most common palindromes."],
+    [16, 9, "l", "What happens when the first number is greater than the second?"],
+    [11, 13, "q", "The ratio of 2 adjacent Fibonacci numbers in the sequence approaches the Golden number, phi, which is approx. 1.618..."]
+]
 
 test_output = [
     "386 400 425 439 347 465 341",

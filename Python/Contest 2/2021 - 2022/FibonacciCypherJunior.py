@@ -32,17 +32,18 @@ def fib_cypher(key, msg):
     return result
 
 
-test_input = [[""] * 2] * 10
-test_input[0] = ["h", "ACSL c2"]
-test_input[1] = ["s", "Python Programming"]
-test_input[2] = ["a", "Fibonacci Numbers"]
-test_input[3] = ["j", "Help ME!"]
-test_input[4] = ["z", "It is 9:30 in the morning."]
-test_input[5] = ["h", "ACSL Contest 2"]
-test_input[6] = ["b", "Madam, I'm Adam!"]
-test_input[7] = ["a", "Java programs are the best."]
-test_input[8] = ["d", "What are we really doing?"]
-test_input[9] = ["g", "This is the Fibonacci Cypher!"]
+test_input = [
+    ["h", "ACSL c2"],
+    ["s", "Python Programming"],
+    ["a", "Fibonacci Numbers"],
+    ["j", "Help ME!"],
+    ["z", "It is 9:30 in the morning."],
+    ["h", "ACSL Contest 2"],
+    ["b", "Madam, I'm Adam!"],
+    ["a", "Java programs are the best."],
+    ["d", "What are we really doing?"],
+    ["g", "This is the Fibonacci Cypher!"]
+]
 
 test_output = [
     "170 173 190 185 144 216 149",
