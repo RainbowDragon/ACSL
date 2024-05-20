@@ -80,17 +80,18 @@ def get_octal_string_for_int(num):
     return str(oct(num)[2:])
 
 
-test_input = [""] * 10
-test_input[0] = "Roses are red."
-test_input[1] = "A is for Alpha; B is for Bravo; C is for Charlie."
-test_input[2] = "A stitch in time saves nine."
-test_input[3] = "1, 2: Buckle my shoe! 3, 4: Shut the door!"
-test_input[4] = "The quick brown fox jumped over the lazy dogs."
-test_input[5] = "ACSL is 45 years old and going strong."
-test_input[6] = "What was the first computer programming language you learned?"
-test_input[7] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz."
-test_input[8] = "zyxwvutsrqponmlkjihgfedcba"
-test_input[9] = "~{w|x|y|z}"
+test_input = [
+    "Roses are red.",
+    "A is for Alpha; B is for Bravo; C is for Charlie.",
+    "A stitch in time saves nine.",
+    "1, 2: Buckle my shoe! 3, 4: Shut the door!",
+    "The quick brown fox jumped over the lazy dogs.",
+    "ACSL is 45 years old and going strong.",
+    "What was the first computer programming language you learned?",
+    "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.",
+    "zyxwvutsrqponmlkjihgfedcba",
+    "~{w|x|y|z}"
+]
 
 test_output = [4, 9, 8, 6, 5, 6, 9, 9, 2, -1]
 

@@ -44,17 +44,18 @@ def get_binary_string_for_int(num):
     return str(bin(num)[2:])
 
 
-test_input = [""] * 10
-test_input[0] = "Roses are red."
-test_input[1] = "A is Alpha; B is Bravo; C is Charlie."
-test_input[2] = "A stitch in time saves nine."
-test_input[3] = "1, 2: Buckle my shoe! 3, 4: Shut the door!"
-test_input[4] = "Is HackerRank the platform used by ACSL?"
-test_input[5] = "What was the first computer programming language you learned?"
-test_input[6] = "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz."
-test_input[7] = "Knock, knock. Who is there? Hawaii. Hawaii who? I am good, Hawaii you?"
-test_input[8] = "How do you use HackerRank to do each ACSL competition?"
-test_input[9] = "~{w|x|y|z}"
+test_input = [
+    "Roses are red.",
+    "A is Alpha; B is Bravo; C is Charlie.",
+    "A stitch in time saves nine.",
+    "1, 2: Buckle my shoe! 3, 4: Shut the door!",
+    "Is HackerRank the platform used by ACSL?",
+    "What was the first computer programming language you learned?",
+    "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.",
+    "Knock, knock. Who is there? Hawaii. Hawaii who? I am good, Hawaii you?",
+    "How do you use HackerRank to do each ACSL competition?",
+    "~{w|x|y|z}"
+]
 
 test_output = [16, 20, 14, 30, 61, 61, 30, 64, 33, 20]
 
