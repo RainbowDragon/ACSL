@@ -126,7 +126,9 @@ test_input = [
     ]
 ]
 
-test_output = [6, 60, 16, 9, 11, 159, -49, 63]
+test_output = [
+    6, 60, 16, 9, 11, 159, -49, 63
+]
 
 for i in range(8):
     test_result = sum_smallest_in_visited_cells(test_input[i][0], test_input[i][1], test_input[i][2], test_input[i][3])

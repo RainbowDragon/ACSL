@@ -147,7 +147,9 @@ test_input = [
     ]
 ]
 
-test_output = [6, 12, 6, 17, 9, 14, 60, -48]
+test_output = [
+    6, 12, 6, 17, 9, 14, 60, -48
+]
 
 for i in range(8):
     test_result = sum_of_min_along_path(test_input[i][0], test_input[i][1:])

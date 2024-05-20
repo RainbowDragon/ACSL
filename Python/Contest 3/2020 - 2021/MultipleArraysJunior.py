@@ -86,7 +86,9 @@ test_input = [
     ]
 ]
 
-test_output = [70, 101, 63, 6, 1139, 131, 1032, 46946, -86, 1]
+test_output = [
+    70, 101, 63, 6, 1139, 131, 1032, 46946, -86, 1
+]
 
 for i in range(10):
     test_result = sum_of_largest(test_input[i][0], test_input[i][1], test_input[i][2])
