@@ -68,29 +68,15 @@ def only_left_or_right(s):
     return "".join(left) + " " + "".join(right)
 
 
-test_input = [""] * 10
-test_input[0] = "PYTHONN"
-test_input[1] = "BINARYSEARCHTREE"
-test_input[2] = "CORONAVIRUS"
-test_input[3] = "FINALSFORACSL"
-test_input[4] = "HACKERRANKPLATFORM"
-test_input[5] = "MOTHER"
-test_input[6] = "ACSLCONTEST"
-test_input[7] = "SUPERCALIFRAGILISTIC"
-test_input[8] = "JAVAPROGRAMMING"
-test_input[9] = "ABDFHKMOQTVWYZ"
+test_input = [
+    "PYTHONN", "BINARYSEARCHTREE", "CORONAVIRUS", "FINALSFORACSL", "HACKERRANKPLATFORM",
+    "MOTHER", "ACSLCONTEST", "SUPERCALIFRAGILISTIC", "JAVAPROGRAMMING", "ABDFHKMOQTVWYZ"
+]
 
-test_output = [""] * 10
-test_output[0] = "NOY H"
-test_output[1] = "AERY CNS"
-test_output[2] = "NOUV NONE"
-test_output[3] = "FLS IOR"
-test_output[4] = "AR CEL"
-test_output[5] = "HT O"
-test_output[6] = "T A"
-test_output[7] = "CIILU FG"
-test_output[8] = "AORV NONE"
-test_output[9] = "NONE ABDFHKMOQTVWY"
+test_output = [
+    "NOY H", "AERY CNS", "NOUV NONE", "FLS IOR", "AR CEL",
+    "HT O", "T A", "CIILU FG", "AORV NONE", "NONE ABDFHKMOQTVWY"
+]
 
 for i in range(10):
     test_result = only_left_or_right(test_input[i])
