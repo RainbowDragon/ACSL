@@ -50,7 +50,9 @@ test_input = [
     ["ABE", "CAB", "40"], ["31415", "92653", "60"], ["DEAF", "BED", "72"], ["BAD", "DAD", "100"], ["704", "1776", "244"]
 ]
 
-test_output = ["5", "C", "A", "F", "5", "5", "F", "3", "A", "E"]
+test_output = [
+    "5", "C", "A", "F", "5", "5", "F", "3", "A", "E"
+]
 
 for i in range(10):
     test_result = sum_of_last_row(test_input[i][0], test_input[i][1], int(test_input[i][2]))

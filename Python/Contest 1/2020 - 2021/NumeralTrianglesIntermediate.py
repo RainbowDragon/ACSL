@@ -58,7 +58,9 @@ test_input = [
     [4567, 7, 65], [3141, 5, 26], [765, 43, 21], [704, 1776, 20], [77, 7, 100]
 ]
 
-test_output = [36, 38, 230, 99, 178, 1038, 429, 329, 374, 1547]
+test_output = [
+    36, 38, 230, 99, 178, 1038, 429, 329, 374, 1547
+]
 
 for i in range(10):
     test_result = sum_of_last_row(test_input[i][0], test_input[i][1], test_input[i][2])
