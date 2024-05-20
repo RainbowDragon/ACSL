@@ -65,7 +65,7 @@ public class ACSLRackOSenior {
                     rackList[result2[1]] = card;
                 }
             }
-            
+
             if (isRackInOrder(rackList)) {
                 return getRackAsString(rackList);
             }
