@@ -134,7 +134,9 @@ public class PatolliJunior {
                 "10 17 20 9 12 4 5 3 1 6 2 3 3 5 4 1 6"
         };
 
-        String[] output = {"17", "23", "33", "34", "GAME OVER", "42", "GAME OVER", "27", "15", "48"};
+        String[] output = {
+                "17", "23", "33", "34", "GAME OVER", "42", "GAME OVER", "27", "15", "48"
+        };
 
         for (int i = 0; i < 10; i++)
         {
