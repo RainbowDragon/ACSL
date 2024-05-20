@@ -163,7 +163,9 @@ public class FibonacciMandelbrotSenior {
                 {-0.375f, -0.1f, 0.075f, 0.5f, 0.025f}
         };
 
-        int[] output = {9, 15, 1, 222, 34, 30, 127, 764, 388, 456};
+        int[] output = {
+                9, 15, 1, 222, 34, 30, 127, 764, 388, 456
+        };
 
         for (int i = 0; i < 10; i++)
         {
