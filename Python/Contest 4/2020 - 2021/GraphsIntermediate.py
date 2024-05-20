@@ -44,7 +44,9 @@ test_input = [
     "55 77 45 54"
 ]
 
-test_output = [1653, 1789, 2956, 4515, 581, 8478, 6301, 7880, 7249, 0]
+test_output = [
+    1653, 1789, 2956, 4515, 581, 8478, 6301, 7880, 7249, 0
+]
 
 for i in range(10):
     test_result = sum_paths_of_length2(test_input[i])

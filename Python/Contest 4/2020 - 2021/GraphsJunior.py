@@ -78,7 +78,9 @@ test_input = [
     ["3", "55 77 45 54"]
 ]
 
-test_output = [25, 5, 49, 10, 50, 0, 42, 24, 52, 6]
+test_output = [
+    25, 5, 49, 10, 50, 0, 42, 24, 52, 6
+]
 
 for i in range(10):
     test_result = find_characteristic(int(test_input[i][0]), test_input[i][1])
