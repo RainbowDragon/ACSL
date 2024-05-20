@@ -95,76 +95,77 @@ public class ACSLBookSenior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{
-                "ACSL, or the American Computer Science League, is an international computer science competition among more than 300 schools.  " +
-                        "Originally founded in 1978 as the Rhode Island Computer Science League, it then became the New England Computer Science League.",
-                "American Computer Science League (ACSL) is fun!"
-        };
-        input[1] = new String[]{
-                "To be or not to be, that is the question- a quote by William Shakespeare.  " +
-                        "2B or not 2B- a hexadecimal equivalent!  " +
-                        "How would you write it?",
-                "Boolean is always True!"
-        };
-        input[2] = new String[]{
-                "Various programming languages are: Java, Python, Visual BASIC, C++, Lisp, C#, FORTRAN, R, SQL.  " +
-                        "Javascript is the language of the Internet!  " +
-                        "HTML stands for Hypertext Markup Language and is not really a coding language!  " +
-                        "There are over 300 languages.  " +
-                        "Which one do you like best?",
-                "Java is the language of AP CS! Where is Lisp used?"
-        };
-        input[3] = new String[]{
-                "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  " +
-                        "Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.  " +
-                        "We are met on a great battle-field of that war.  " +
-                        "We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live.  " +
-                        "It is altogether fitting and proper that we should do this.  " +
-                        "This was written by Abraham Lincoln on 11/19/1863!",
-                "The #1 speech of all time was less than 8 minutes long!"
-        };
-        input[4] = new String[]{
-                "There are 10 kinds of people in the world: those who know binary and those who don't!  " +
-                        "Make sure you learn binary.  " +
-                        "Computers all use it.",
-                "Could you be the 0 kind or the 1 kind?"
-        };
-        input[5] = new String[]{
-                "ACSL, or the American Computer Science League, is an international computer science competition among more than 300 schools.  " +
-                        "Originally founded in 1978 as the Rhode Island Computer Science League, it then became the New England Computer Science League.  " +
-                        "With countrywide and worldwide participants, it became the American Computer Science League.  " +
-                        "It has been in continuous existence since 1978.  " +
-                        "Each yearly competition consists of four regular-season contests.  " +
-                        "All students at each school may compete, but the team score is the sum of the best 3 or 5 top scores.  " +
-                        "Each contest consists of 2 parts: a written section (called shorts) and a programming section.  " +
-                        "Written topics tested include what does this program do, digital electronics, Boolean algebra, computer numbering systems, recursive functions, data structures (primarily dealing with heaps, binary search trees, stacks, and queues), Lisp programming, regular expressions and Finite State Automata, bit string flicking, graph theory, assembly language programming, and prefix/postfix/infix notation.",
-                "ACSL (American Computer Science League) is forty-six years old in '23!"
-        };
-        input[6] = new String[]{
-                "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.  " +
-                        "That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed...",
-                "Live life; pursue happiness; be free!"
-        };
-        input[7] = new String[]{
-                "The upheavals [of Artificial Intelligence] can escalate quickly and become scarier and even cataclysmic.  " +
-                        "Imagine how a medical robot, originally programmed to rid cancer, could conclude that the best way to obliterate cancer is to exterminate humans who are genetically prone to the disease.  " +
-                        "Nick Bilton is a tech columnist who wrote in the New York Times.",
-                "AI is here to stay! If so, how good will it get?"
-        };
-        input[8] = new String[]{
-                "I'm increasingly inclined to think that there should be some regulatory oversight, maybe at the national and international level, just to make sure that we don't do something very foolish.  " +
-                        "I mean with artificial intelligence we're summoning the demon.  " +
-                        "This was said by Elon Musk at MIT's AeroAstro Centennial Symposium.",
-                "AI is even scary for IT geniuses. Is it to you?"
-        };
-        input[9] = new String[]{
-                "The quadratic equation x^2-6x-7=0 can be solved by factoring it into (x-7)(x+1)=0.  " +
-                        "By setting x-7=0 or x+1=0, the result is that x = 7 or x =-1.  " +
-                        "However, if 3x^2-5x+9=0, factoring is not possible because 25-4*3*9<0 so the roots of this equation are 2 imaginary numbers.  " +
-                        "In the 1st case, the function crosses the x-axis at 7 and -1.  " +
-                        "In the 2nd case, the graph is completely above the x-axis!",
-                "The roots of x^2+9=0 are +3i and -3i, 2 imaginary numbers."
+        String[][] input = {
+                {
+                        "ACSL, or the American Computer Science League, is an international computer science competition among more than 300 schools.  " +
+                                "Originally founded in 1978 as the Rhode Island Computer Science League, it then became the New England Computer Science League.",
+                        "American Computer Science League (ACSL) is fun!"
+                },
+                {
+                        "To be or not to be, that is the question- a quote by William Shakespeare.  " +
+                                "2B or not 2B- a hexadecimal equivalent!  " +
+                                "How would you write it?",
+                        "Boolean is always True!"
+                },
+                {
+                        "Various programming languages are: Java, Python, Visual BASIC, C++, Lisp, C#, FORTRAN, R, SQL.  " +
+                                "Javascript is the language of the Internet!  " +
+                                "HTML stands for Hypertext Markup Language and is not really a coding language!  " +
+                                "There are over 300 languages.  " +
+                                "Which one do you like best?",
+                        "Java is the language of AP CS! Where is Lisp used?"
+                },
+                {
+                        "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.  " +
+                                "Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.  " +
+                                "We are met on a great battle-field of that war.  " +
+                                "We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live.  " +
+                                "It is altogether fitting and proper that we should do this.  " +
+                                "This was written by Abraham Lincoln on 11/19/1863!",
+                        "The #1 speech of all time was less than 8 minutes long!"
+                },
+                {
+                        "There are 10 kinds of people in the world: those who know binary and those who don't!  " +
+                                "Make sure you learn binary.  " +
+                                "Computers all use it.",
+                        "Could you be the 0 kind or the 1 kind?"
+                },
+                {
+                        "ACSL, or the American Computer Science League, is an international computer science competition among more than 300 schools.  " +
+                                "Originally founded in 1978 as the Rhode Island Computer Science League, it then became the New England Computer Science League.  " +
+                                "With countrywide and worldwide participants, it became the American Computer Science League.  " +
+                                "It has been in continuous existence since 1978.  " +
+                                "Each yearly competition consists of four regular-season contests.  " +
+                                "All students at each school may compete, but the team score is the sum of the best 3 or 5 top scores.  " +
+                                "Each contest consists of 2 parts: a written section (called shorts) and a programming section.  " +
+                                "Written topics tested include what does this program do, digital electronics, Boolean algebra, computer numbering systems, recursive functions, data structures (primarily dealing with heaps, binary search trees, stacks, and queues), Lisp programming, regular expressions and Finite State Automata, bit string flicking, graph theory, assembly language programming, and prefix/postfix/infix notation.",
+                        "ACSL (American Computer Science League) is forty-six years old in '23!"
+                },
+                {
+                        "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.  " +
+                                "That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed...",
+                        "Live life; pursue happiness; be free!"
+                },
+                {
+                        "The upheavals [of Artificial Intelligence] can escalate quickly and become scarier and even cataclysmic.  " +
+                                "Imagine how a medical robot, originally programmed to rid cancer, could conclude that the best way to obliterate cancer is to exterminate humans who are genetically prone to the disease.  " +
+                                "Nick Bilton is a tech columnist who wrote in the New York Times.",
+                        "AI is here to stay! If so, how good will it get?"
+                },
+                {
+                        "I'm increasingly inclined to think that there should be some regulatory oversight, maybe at the national and international level, just to make sure that we don't do something very foolish.  " +
+                                "I mean with artificial intelligence we're summoning the demon.  " +
+                                "This was said by Elon Musk at MIT's AeroAstro Centennial Symposium.",
+                        "AI is even scary for IT geniuses. Is it to you?"
+                },
+                {
+                        "The quadratic equation x^2-6x-7=0 can be solved by factoring it into (x-7)(x+1)=0.  " +
+                                "By setting x-7=0 or x+1=0, the result is that x = 7 or x =-1.  " +
+                                "However, if 3x^2-5x+9=0, factoring is not possible because 25-4*3*9<0 so the roots of this equation are 2 imaginary numbers.  " +
+                                "In the 1st case, the function crosses the x-axis at 7 and -1.  " +
+                                "In the 2nd case, the graph is completely above the x-axis!",
+                        "The roots of x^2+9=0 are +3i and -3i, 2 imaginary numbers."
+                }
         };
 
         String[] output = {
