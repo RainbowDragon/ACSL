@@ -45,17 +45,10 @@ def transform_to_single_hex_digit(number):
     return number
 
 
-test_input = [[""] * 3] * 10
-test_input[0] = ["A", "9", "5"]
-test_input[1] = ["ABC", "F", "4"]
-test_input[2] = ["BAD", "50", "10"]
-test_input[3] = ["FED", "ABC", "25"]
-test_input[4] = ["184", "231", "35"]
-test_input[5] = ["ABE", "CAB", "40"]
-test_input[6] = ["31415", "92653", "60"]
-test_input[7] = ["DEAF", "BED", "72"]
-test_input[8] = ["BAD", "DAD", "100"]
-test_input[9] = ["704", "1776", "244"]
+test_input = [
+    ["A", "9", "5"], ["ABC", "F", "4"], ["BAD", "50", "10"], ["FED", "ABC", "25"], ["184", "231", "35"],
+    ["ABE", "CAB", "40"], ["31415", "92653", "60"], ["DEAF", "BED", "72"], ["BAD", "DAD", "100"], ["704", "1776", "244"]
+]
 
 test_output = ["5", "C", "A", "F", "5", "5", "F", "3", "A", "E"]
 

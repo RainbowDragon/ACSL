@@ -17,8 +17,8 @@ def sum_of_last_row(s, d, r):
     result = 0
     numbers_to_skip = r * (r - 1) // 2
 
-    start_number = oct2decimal(s)
-    delta = oct2decimal(d)
+    start_number = oct_to_decimal(s)
+    delta = oct_to_decimal(d)
     current_number = start_number + delta * numbers_to_skip
 
     for k in range(r):
@@ -28,7 +28,7 @@ def sum_of_last_row(s, d, r):
     return result
 
 
-def oct2decimal(oct_number):
+def oct_to_decimal(oct_number):
 
     number = 0
     base = 1
@@ -53,17 +53,10 @@ def sum_of_oct_digit(number):
     return digit_sum
 
 
-test_input = [[0] * 3] * 10
-test_input[0] = [2, 3, 5]
-test_input[1] = [221, 2, 4]
-test_input[2] = [1, 4, 20]
-test_input[3] = [10, 10, 10]
-test_input[4] = [3245, 5, 11]
-test_input[5] = [4567, 7, 65]
-test_input[6] = [3141, 5, 26]
-test_input[7] = [765, 43, 21]
-test_input[8] = [704, 1776, 20]
-test_input[9] = [77, 7, 100]
+test_input = [
+    [2, 3, 5], [221, 2, 4], [1, 4, 20], [10, 10, 10], [3245, 5, 11],
+    [4567, 7, 65], [3141, 5, 26], [765, 43, 21], [704, 1776, 20], [77, 7, 100]
+]
 
 test_output = [36, 38, 230, 99, 178, 1038, 429, 329, 374, 1547]
 
