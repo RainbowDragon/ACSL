@@ -75,49 +75,52 @@ public class StringDifferencesSenior {
 
     public static void main (String [] args) {
 
-        String[][] input = new String[10][];
-        input[0] = new String[]{
-                "I am going home now",
-                "I will go home now"
-        };
-        input[1] = new String[]{
-                "The big black bear bit a big black bug",
-                "The big black bug bled black blood"
-        };
-        input[2] = new String[]{
-                "Complementary angle measures sum to 90 degrees.",
-                "The measures of supplementary angles add to 180 degrees."
-        };
-        input[3] = new String[]{
-                "A Tale of Two Cities was published by Dickens in 1859.",
-                "In 1839, Charles Dickens published Nicholas Nickleby."
-        };
-        input[4] = new String[]{
-                "Connecticut is The Constitution State.",
-                "Hartford is the capital of Connecticut."
-        };
-        input[5] = new String[]{
-                "To be or not to be, that is the question.",
-                "To err is human; to really foul things up requires a computer."
-        };
-        input[6] = new String[]{
-                "The Pythagorean Theorem says that the sum of the squares of the two legs equals the square of the hypotenuse.",
-                "To find a leg using the Pythagorean Theorem, take the square root of the hypotenuse squared minus the other leg squared."
-        };
-        input[7] = new String[]{
-                "Uncle Tom's Cabin was published by Harriet Beecher Stowe in 1852.",
-                "In 1876, Mark Twain published The Adventures of Tom Sawyer."
-        };
-        input[8] = new String[]{
-                "Once upon a midnight dreary while I pondered weak and weary,",
-                "Over many a quaint and curious volume of forgotten lore."
-        };
-        input[9] = new String[]{
-                "A tutor who tooted the flute tried to tutor two tooters to toot!",
-                "Is it harder to toot or to tutor two tooters to toot?"
+        String[][] input = {
+                {
+                        "I am going home now",
+                        "I will go home now"
+                },
+                {
+                        "The big black bear bit a big black bug",
+                        "The big black bug bled black blood"
+                },
+                {
+                        "Complementary angle measures sum to 90 degrees.",
+                        "The measures of supplementary angles add to 180 degrees."
+                },
+                {
+                        "A Tale of Two Cities was published by Dickens in 1859.",
+                        "In 1839, Charles Dickens published Nicholas Nickleby."
+                },
+                {
+                        "Connecticut is The Constitution State.",
+                        "Hartford is the capital of Connecticut."
+                },
+                {
+                        "To be or not to be, that is the question.",
+                        "To err is human; to really foul things up requires a computer."
+                },
+                {
+                        "The Pythagorean Theorem says that the sum of the squares of the two legs equals the square of the hypotenuse.",
+                        "To find a leg using the Pythagorean Theorem, take the square root of the hypotenuse squared minus the other leg squared."
+                },
+                {
+                        "Uncle Tom's Cabin was published by Harriet Beecher Stowe in 1852.",
+                        "In 1876, Mark Twain published The Adventures of Tom Sawyer."
+                },
+                {
+                        "Once upon a midnight dreary while I pondered weak and weary,",
+                        "Over many a quaint and curious volume of forgotten lore."
+                },
+                {
+                        "A tutor who tooted the flute tried to tutor two tooters to toot!",
+                        "Is it harder to toot or to tutor two tooters to toot?"
+                }
         };
 
-        int[] output = {10, 19, 26, 18, 11, 14, 50, 20, 9, 31};
+        int[] output = {
+                10, 19, 26, 18, 11, 14, 50, 20, 9, 31
+        };
 
         for (int i = 0; i < 10; i++)
         {

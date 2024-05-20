@@ -106,7 +106,9 @@ public class StringDifferencesJunior {
                 {"AMERICANCOMPUTERSCIENCELEAGUE", "NATIONALACADEMICGAMESLEAGUE"}
         };
 
-        String[] output = {"R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"};
+        String[] output = {
+                "R", "C", "VN", "SBGRPHCL", "RMY", "DLDD", "LPP", "CCC", "SCSBYCLNY", "NTNLCDGM"
+        };
 
         for (int i = 0; i < 10; i++)
         {

@@ -75,7 +75,9 @@ public class StringDifferencesIntermediate {
                 {"ABCDEFGHIJK", "ABDCEFGKILKJMN"}
         };
 
-        int[] output = {-35, -5, -4, -86, -52, 23, 27, 11, 68, -9};
+        int[] output = {
+                -35, -5, -4, -86, -52, 23, 27, 11, 68, -9
+        };
 
         for (int i = 0; i < 10; i++)
         {
