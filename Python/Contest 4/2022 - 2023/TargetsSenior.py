@@ -111,7 +111,9 @@ test_input = [
     ["6", "05 11 20 21 22 23 33 42 43 52 53 54", "321312 401043", "00D 02H 04H 14H 15B 24H 34H 35H 40C 50C 55A"]
 ]
 
-test_output = ["32E", "30C", "35H", "55E", "02D", "34D", "50B", "55A", "41H", "30F"]
+test_output = [
+    "32E", "30C", "35H", "55E", "02D", "34D", "50B", "55A", "41H", "30F"
+]
 
 for i in range(10):
     test_result = missing_arrow(int(test_input[i][0]), test_input[i][1], test_input[i][2], test_input[i][3])

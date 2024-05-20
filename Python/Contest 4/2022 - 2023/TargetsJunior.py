@@ -83,7 +83,9 @@ test_input = [
     ["8", "12 13 16 21 22 31 34 35 36 45 43 41 52 54 56 66 65 64 63 61"]
 ]
 
-test_output = ["40C", "01D", "89A", "05D", "02D", "80F", "65B", "03D", "29A", "27H"]
+test_output = [
+    "40C", "01D", "89A", "05D", "02D", "80F", "65B", "03D", "29A", "27H"
+]
 
 for i in range(10):
     test_result = arrow_for_most_targets(int(test_input[i][0]), test_input[i][1])
