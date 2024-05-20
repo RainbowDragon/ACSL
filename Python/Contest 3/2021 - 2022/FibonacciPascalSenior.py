@@ -55,9 +55,13 @@ def get_fibonacci_index(fib):
     return index
 
 
-test_input = [8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903]
+test_input = [
+    8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903
+]
 
-test_output = [2, 8, 16, 31, 58, 6, 21, 67, 96, 171]
+test_output = [
+    2, 8, 16, 31, 58, 6, 21, 67, 96, 171
+]
 
 for i in range(10):
     test_result = count_unique_values(test_input[i])

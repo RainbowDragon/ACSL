@@ -40,7 +40,9 @@ def get_fibonacci_index(fib):
     return index
 
 
-test_input = [8, 89, 610, 10946, 317811, 2, 55, 1597, 17711, 832040]
+test_input = [
+    8, 89, 610, 10946, 317811, 2, 55, 1597, 17711, 832040
+]
 
 test_output = [
     "1 4 3",
