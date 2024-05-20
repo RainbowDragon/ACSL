@@ -35,7 +35,9 @@ test_input = [
     [1000, 8, 10], [50, 4, 13], [75, 9, 384], [100, 6, 555], [25, 2, 110000111010]
 ]
 
-test_output = [65, 64, 189, 212, 170, 10948, 225, 876, 675, 135]
+test_output = [
+    65, 64, 189, 212, 170, 10948, 225, 876, 675, 135
+]
 
 for i in range(10):
     test_result = find_digit_sum(test_input[i][0], test_input[i][1], test_input[i][2])

@@ -38,7 +38,9 @@ test_input = [
     [50, 4, "12"], [75, 9, "384"], [500, 14, "9CBA"], [700, 11, "AAA0"], [25, 2, "110000111010"]
 ]
 
-test_output = [9, 105, 14, 10, 4938, 42, 88, 336, 940, 165]
+test_output = [
+    9, 105, 14, 10, 4938, 42, 88, 336, 940, 165
+]
 
 for i in range(10):
     test_result = find_mode_count(test_input[i][0], test_input[i][1], test_input[i][2])

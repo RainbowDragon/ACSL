@@ -38,7 +38,9 @@ test_input = [
     [1000, 8, 10], [50, 4, 13], [75, 9, 384], [100, 6, 555], [25, 2, 110000111010]
 ]
 
-test_output = [2, 21, 24, 1, 170, 357, 34, 13, 31, 135]
+test_output = [
+    2, 21, 24, 1, 170, 357, 34, 13, 31, 135
+]
 
 for i in range(10):
     test_result = count_largest_digit(test_input[i][0], test_input[i][1], test_input[i][2])
