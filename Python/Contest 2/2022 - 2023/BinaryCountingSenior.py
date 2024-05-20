@@ -93,7 +93,9 @@ test_input = [
     "~{w|x|y|z}"
 ]
 
-test_output = [4, 9, 8, 6, 5, 6, 9, 9, 2, -1]
+test_output = [
+    4, 9, 8, 6, 5, 6, 9, 9, 2, -1
+]
 
 for i in range(10):
     test_result = find_last_octal(test_input[i])

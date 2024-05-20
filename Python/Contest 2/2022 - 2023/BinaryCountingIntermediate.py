@@ -67,7 +67,9 @@ test_input = [
     "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz."
 ]
 
-test_output = [12, 20, 14, 22, 27, 29, 27, 30, 20, 26]
+test_output = [
+    12, 20, 14, 22, 27, 29, 27, 30, 20, 26
+]
 
 for i in range(10):
     test_result = find_last_binary(test_input[i])

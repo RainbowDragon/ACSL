@@ -57,7 +57,9 @@ test_input = [
     "~{w|x|y|z}"
 ]
 
-test_output = [16, 20, 14, 30, 61, 61, 30, 64, 33, 20]
+test_output = [
+    16, 20, 14, 30, 61, 61, 30, 64, 33, 20
+]
 
 for i in range(10):
     test_result = find_last_binary(test_input[i])
