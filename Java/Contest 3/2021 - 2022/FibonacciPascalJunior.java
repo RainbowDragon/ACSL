@@ -53,7 +53,9 @@ public class FibonacciPascalJunior {
 
     public static void main (String [] args) {
 
-        int[] input = {8, 89, 610, 10946, 317811, 2, 55, 1597, 17711, 832040};
+        int[] input = {
+                8, 89, 610, 10946, 317811, 2, 55, 1597, 17711, 832040
+        };
 
         String[] output = {
                 "1 4 3",

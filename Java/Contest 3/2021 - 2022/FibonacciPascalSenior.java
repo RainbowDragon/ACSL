@@ -74,9 +74,13 @@ public class FibonacciPascalSenior {
 
     public static void main (String [] args) {
 
-        int[] input = {8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903};
+        int[] input = {
+                8, 89, 610, 10946, 317811, 55, 1597, 832040, 9227465, 1836311903
+        };
 
-        int[] output = {2, 8, 16, 31, 58, 6, 21, 67, 96, 171};
+        int[] output = {
+                2, 8, 16, 31, 58, 6, 21, 67, 96, 171
+        };
 
         for (int i = 0; i < 10; i++)
         {
