@@ -54,7 +54,11 @@ def find_time(cstr):
     return str_hour + ":" + str_minute + ":" + str_second
 
 
-test_input = ["RWGBG", "RCMGB", "BYYGR", "MRGBW", "YYYYY", "WGBGR", "CGRMY", "MMMMC", "CCCYY", "WWWWW"]
+test_input = [
+    "RWGBG", "RCMGB", "BYYGR", "MRGBW", "YYYYY",
+    "WGBGR", "CGRMY", "MMMMC", "CCCYY", "WWWWW"
+]
+
 test_output = [
     "01:35:15", "03:20:40", "08:30:05", "02:10:20", "01:00:00",
     "05:20:10", "10:35:20", "07:26:00", "09:00:20", "00:00:00"
