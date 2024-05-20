@@ -55,17 +55,13 @@ def check_match(binary_expression, cell):
     return match
 
 
-test_input = [""] * 10
-test_input[0] = "AB+~AB+~A~B"
-test_input[1] = "AB~C~D+AB~CD+~A~B~CD"
-test_input[2] = "AB~C~D+~AB~C~D+A~B~C~D"
-test_input[3] = "B~D+~B~D"
-test_input[4] = "~A~BD+~A~B~D"
-test_input[5] = "B~D+~A~BD+A~B~C"
-test_input[6] = "~B~C+BCD+B~C~D"
-test_input[7] = "A~C+ACD+~A~CD"
-test_input[8] = "AB~D+~ABD+A~BD+~A~B~D"
-test_input[9] = "B~D+~A~CD+~A~B~C~D"
+test_input = [
+    "AB+~AB+~A~B", "AB~C~D+AB~CD+~A~B~CD",
+    "AB~C~D+~AB~C~D+A~B~C~D", "B~D+~B~D",
+    "~A~BD+~A~B~D", "B~D+~A~BD+A~B~C",
+    "~B~C+BCD+B~C~D", "A~C+ACD+~A~CD",
+    "AB~D+~ABD+A~BD+~A~B~D", "B~D+~A~CD+~A~B~C~D"
+]
 
 test_output = ["FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"]
 

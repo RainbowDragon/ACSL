@@ -72,17 +72,13 @@ def check_match(binary_expression, cell):
 
 test_input = ["FF33", "00CC", "6090", "8810", "9008", "F0B8", "9699", "8DD8", "C3C3", "F111"]
 
-test_output = [""] * 10
-test_output[0] = "B+~A~B"
-test_output[1] = "A~B"
-test_output[2] = "BC~D+~B~CD"
-test_output[3] = "AB~C+~A~B~CD"
-test_output[4] = "B~C~D+A~B~C~D"
-test_output[5] = "B~D+~A~BD+A~B~C"
-test_output[6] = "~B~C+BCD+B~C~D"
-test_output[7] = "A~C+ACD+~A~CD"
-test_output[8] = "AB~D+~ABD+A~BD+~A~B~D"
-test_output[9] = "B~D+~A~CD+~A~B~C~D"
+test_output = [
+    "B+~A~B", "A~B",
+    "BC~D+~B~CD", "AB~C+~A~B~CD",
+    "B~C~D+A~B~C~D", "B~D+~A~BD+A~B~C",
+    "~B~C+BCD+B~C~D", "A~C+ACD+~A~CD",
+    "AB~D+~ABD+A~BD+~A~B~D", "B~D+~A~CD+~A~B~C~D"
+]
 
 for i in range(10):
     test_result = get_boolean_expression(test_input[i])
