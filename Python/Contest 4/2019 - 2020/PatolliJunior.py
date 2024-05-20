@@ -93,7 +93,9 @@ test_input = [
     "10 17 20 9 12 4 5 3 1 6 2 3 3 5 4 1 6"
 ]
 
-test_output = ["17", "23", "33", "34", "GAME OVER", "42", "GAME OVER", "27", "15", "48"]
+test_output = [
+    "17", "23", "33", "34", "GAME OVER", "42", "GAME OVER", "27", "15", "48"
+]
 
 for i in range(10):
     test_result = get_final_location(test_input[i])
