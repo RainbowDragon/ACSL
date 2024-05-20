@@ -55,7 +55,9 @@ test_input = [
     ['G', 'G', 'G', 'G', 'G'], ['W', 'B', 'B', 'B', 'B']
 ]
 
-test_output = ["04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"]
+test_output = [
+    "04:50", "08:30", "10:40", "11:00", "01:50", "09:45", "08:00", "00:00", "01:00", "11:55"
+]
 
 for i in range(10):
     test_result = find_time(test_input[i][0], test_input[i][1], test_input[i][2], test_input[i][3], test_input[i][4])
