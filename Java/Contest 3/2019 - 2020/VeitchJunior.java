@@ -53,7 +53,9 @@ public class VeitchJunior {
 
     public static void main (String [] args) {
 
-        String[] input = {"33", "3C", "94", "77", "95", "F0", "1D", "9D", "E9", "E7"};
+        String[] input = {
+                "33", "3C", "94", "77", "95", "F0", "1D", "9D", "E9", "E7"
+        };
 
         String[] output = {
                 "~A", "~AB+A~B", "B~C+A~BC", "C+~A~C", "~A~C+AB~C+A~BC",

@@ -97,8 +97,7 @@ public class VeitchSenior {
     public static void main (String [] args) {
 
         String[] input = {
-                "FF33", "00CC", "6090", "8810", "9008",
-                "F0B8", "9699", "8DD8", "C3C3", "F111"
+                "FF33", "00CC", "6090", "8810", "9008", "F0B8", "9699", "8DD8", "C3C3", "F111"
         };
 
         String[] output = {
