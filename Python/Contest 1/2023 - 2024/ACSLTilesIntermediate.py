@@ -75,7 +75,9 @@ test_input = [
     ["3333", " 43 35 55 34 37 53 23 49 13 22 98 12 33 11 53 79 57 39 77 43 72 22 12 48 17 15 75"]
 ]
 
-test_output = [21, 86, 11, 23, 46, 16, 114, 61, 36, 67]
+test_output = [
+    21, 86, 11, 23, 46, 16, 114, 61, 36, 67
+]
 
 for i in range(10):
     test_result = find_discard_sum(int(test_input[i][0]), test_input[i][1])

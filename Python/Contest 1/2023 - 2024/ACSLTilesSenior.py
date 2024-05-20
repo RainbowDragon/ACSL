@@ -97,7 +97,9 @@ test_input = [
     ["0", "93 70 65 9 66 14 46 68 20 63 21 71 88 30 31 1 75", "80 84 85 47 19 89 37 26 4 76 79 92 49 51 45 53 78"]
 ]
 
-test_output = [16, 0, 102, 16, 71, 38, 13, 11, 67, 0]
+test_output = [
+    16, 0, 102, 16, 71, 38, 13, 11, 67, 0
+]
 
 for i in range(10):
     test_result = find_hand_sum(int(test_input[i][0]), test_input[i][1], test_input[i][2])
