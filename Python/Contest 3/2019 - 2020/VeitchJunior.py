@@ -41,7 +41,9 @@ def check_match(number, mask, expression, sb):
     return number
 
 
-test_input = ["33", "3C", "94", "77", "95", "F0", "1D", "9D", "E9", "E7"]
+test_input = [
+    "33", "3C", "94", "77", "95", "F0", "1D", "9D", "E9", "E7"
+]
 
 test_output = [
     "~A", "~AB+A~B", "B~C+A~BC", "C+~A~C", "~A~C+AB~C+A~BC",

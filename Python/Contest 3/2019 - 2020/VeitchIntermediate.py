@@ -63,7 +63,9 @@ test_input = [
     "AB~D+~ABD+A~BD+~A~B~D", "B~D+~A~CD+~A~B~C~D"
 ]
 
-test_output = ["FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"]
+test_output = [
+    "FF33", "8810", "9008", "F00F", "0033", "F0B8", "9699", "8DD8", "C3C3", "F111"
+]
 
 for i in range(10):
     test_result = get_veitch_diagram(test_input[i])

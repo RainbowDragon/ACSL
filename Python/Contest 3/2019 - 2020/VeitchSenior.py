@@ -70,7 +70,9 @@ def check_match(binary_expression, cell):
     return match
 
 
-test_input = ["FF33", "00CC", "6090", "8810", "9008", "F0B8", "9699", "8DD8", "C3C3", "F111"]
+test_input = [
+    "FF33", "00CC", "6090", "8810", "9008", "F0B8", "9699", "8DD8", "C3C3", "F111"
+]
 
 test_output = [
     "B+~A~B", "A~B",
