@@ -154,7 +154,9 @@ public class BinaryCountingSenior {
                 "~{w|x|y|z}",
         };
 
-        int[] output = {4, 9, 8, 6, 5, 6, 9, 9, 2, -1};
+        int[] output = {
+                4, 9, 8, 6, 5, 6, 9, 9, 2, -1
+        };
 
         for (int i = 0; i < 10; i++)
         {

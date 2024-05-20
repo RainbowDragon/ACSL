@@ -91,7 +91,9 @@ public class BinaryCountingJunior {
                 "~{w|x|y|z}"
         };
 
-        int[] output = {16, 20, 14, 30, 61, 61, 30, 64, 33, 20};
+        int[] output = {
+                16, 20, 14, 30, 61, 61, 30, 64, 33, 20
+        };
 
         for (int i = 0; i < 10; i++)
         {

@@ -103,7 +103,9 @@ public class BinaryCountingIntermediate {
                 "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz."
         };
 
-        int[] output = {12, 20, 14, 22, 27, 29, 27, 30, 20, 26};
+        int[] output = {
+                12, 20, 14, 22, 27, 29, 27, 30, 20, 26
+        };
 
         for (int i = 0; i < 10; i++)
         {
