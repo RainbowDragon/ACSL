@@ -54,17 +54,18 @@ def get_index_of_char(c):
         return -1
 
 
-test_input = [""] * 10
-test_input[0] = "This is an Example of Sorting an interesting string"
-test_input[1] = "HackerRank.com was used for the ACSL Finals this year."
-test_input[2] = "The digits of PI are 3.141592653."
-test_input[3] = "She sells seashells by the seashore."
-test_input[4] = "Programming languages include Java, Python, C++, Visual BASIC, Ruby, and Scratch."
-test_input[5] = "COVID-19 is a global pandemic and a virus that changed everything in the entire world."
-test_input[6] = "The Computer Science Teacher Association had a virtual Conference in 2020."
-test_input[7] = "The digits of PI are 3.14159265358979323846264778327, not rounded."
-test_input[8] = "Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?"
-test_input[9] = "There are 10 kinds of people: those who know binary and those who don't."
+test_input = [
+    "This is an Example of Sorting an interesting string",
+    "HackerRank.com was used for the ACSL Finals this year.",
+    "The digits of PI are 3.141592653.",
+    "She sells seashells by the seashore.",
+    "Programming languages include Java, Python, C++, Visual BASIC, Ruby, and Scratch.",
+    "COVID-19 is a global pandemic and a virus that changed everything in the entire world.",
+    "The Computer Science Teacher Association had a virtual Conference in 2020.",
+    "The digits of PI are 3.14159265358979323846264778327, not rounded.",
+    "Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?",
+    "There are 10 kinds of people: those who know binary and those who don't."
+]
 
 test_output = [
     "6in,4ts,3aegr,2o,1ESTfhlmpx",

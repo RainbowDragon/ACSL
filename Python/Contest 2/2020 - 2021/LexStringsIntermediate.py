@@ -43,17 +43,18 @@ def find_blocks(s):
     return blocks
 
 
-test_input = [[""] * 2] * 10
-test_input[0] = ["MBAMMDXXMMMGGMMZ", "3"]
-test_input[1] = ["MHHHHJLDDHHDDD", "3"]
-test_input[2] = ["THETENNESSEEVOLUNTEERS", "2"]
-test_input[3] = ["MISSISSIPPI", "3"]
-test_input[4] = ["BOOOKEEEPEEERR", "4"]
-test_input[5] = ["BOOOKEEEPEERBBBBUZZZOOKEEEEPEER", "2"]
-test_input[6] = ["MASSACHUSETTSVSMISSISSIPPI", "2"]
-test_input[7] = ["OOOOZESSPPOOOOOYYYSSSUPY", "4"]
-test_input[8] = ["SHESELLSSEASHELLSANDBALLOONS", "3"]
-test_input[9] = ["HHHGGRDDCFFFGGGTTTYUIKJHHH", "1"]
+test_input = [
+    ["MBAMMDXXMMMGGMMZ", "3"],
+    ["MHHHHJLDDHHDDD", "3"],
+    ["THETENNESSEEVOLUNTEERS", "2"],
+    ["MISSISSIPPI", "3"],
+    ["BOOOKEEEPEEERR", "4"],
+    ["BOOOKEEEPEERBBBBUZZZOOKEEEEPEER", "2"],
+    ["MASSACHUSETTSVSMISSISSIPPI", "2"],
+    ["OOOOZESSPPOOOOOYYYSSSUPY", "4"],
+    ["SHESELLSSEASHELLSANDBALLOONS", "3"],
+    ["HHHGGRDDCFFFGGGTTTYUIKJHHH", "1"]
+]
 
 test_output = [
     "MMMGGMMMXXABDMZ",
