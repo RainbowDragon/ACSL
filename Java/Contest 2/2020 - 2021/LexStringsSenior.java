@@ -10,7 +10,7 @@ import java.util.*;
 public class LexStringsSenior {
 
     /*
-     * Complete the 'rearrangedString' function below.
+     * Complete the 'rearrangeString' function below.
      *
      * The function is expected to return a STRING.
      * The function accepts STRING s as parameter.
