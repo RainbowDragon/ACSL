@@ -21,7 +21,8 @@ public class StringDifferencesIntermediate {
             StringBuilder sb2 = new StringBuilder();
 
             int len = Math.min(s1.length(), s2.length());
-            for (int i = 0; i < len; i++) {
+            for (int i = 0; i < len; i++) 
+            {
                 if (s1.charAt(i) != s2.charAt(i)) {
                     sb1.append(s1.charAt(i));
                     sb2.append(s2.charAt(i));
