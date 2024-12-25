@@ -151,7 +151,7 @@ public class BinaryCountingSenior {
                 "What was the first computer programming language you learned?",
                 "Lions and Tigers and Bears, Oh My! This is from The Wizard of Oz.",
                 "zyxwvutsrqponmlkjihgfedcba",
-                "~{w|x|y|z}",
+                "~{w|x|y|z}"
         };
 
         int[] output = {
