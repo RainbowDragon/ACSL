@@ -38,6 +38,7 @@ int sumOfMinAlongPath(string dim, vector<string> arrays)
     int dx[8] = {-1, -1, -1, 0, 0, 1, 1, 1};
     int dy[8] = {-1, 0, 1, -1, 1, -1, 0, 1};
     bool visited[row][col];
+    memset(visited, false, sizeof visited);
 
     int i = 0; 
     int j = 0;
@@ -62,14 +63,7 @@ int sumOfMinAlongPath(string dim, vector<string> arrays)
             {
                 for (int l = 0; l < n; l++)
                 {
-                    if (countMap.find(boards[l][nextI][nextJ]) != countMap.end())
-                    {
-                        countMap[boards[l][nextI][nextJ]]++;
-                    }
-                    else
-                    {
-                        countMap[boards[l][nextI][nextJ]] = 1;
-                    }
+                    countMap[boards[l][nextI][nextJ]]++;
                 }
             }
         }
@@ -83,7 +77,7 @@ int sumOfMinAlongPath(string dim, vector<string> arrays)
             }
         }
         sort(numberList.begin(), numberList.end());
-        int maxNumber = numberList[numberList.size()-1];
+        int maxNumber = numberList.back();
 
         bool found = false;
         for (int k = 0; k < 8; k++)
