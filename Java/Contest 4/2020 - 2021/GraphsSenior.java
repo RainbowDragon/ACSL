@@ -35,7 +35,7 @@ public class GraphsSenior {
         for (int i = 1; i < 10; i++)
         {
             visited[i] = true;
-            result += dfs(graph, visited, i,0, num, i);
+            result += dfs(graph, visited, i, 0, num, i);
             visited[i] = false;
         }
 
