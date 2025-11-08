@@ -22,7 +22,11 @@ def score_tosses(numPlayers, tosses):
 
     scores.sort(key=lambda x: (-x[2], x[1]))
 
-    return " ".join(str(player) + "-" + str(score) for player, toss, score in scores)
+    sb = []
+    for i in range(numPlayers):
+        sb.append(str(scores[i][0]) + "-" + str(scores[i][2]))
+
+    return " ".join(sb)
 
 
 def get_score(toss):
