@@ -20,7 +20,7 @@ def score_tosses(numPlayers, tosses):
         score = get_score_from_string(toss_list)
         scores.append([i+1, len(toss_list), score])
 
-    scores.sort(key=lambda x: (-x[2], x[1]))
+    scores.sort(key = lambda x: (-x[2], x[1]))
 
     sb = []
     for i in range(numPlayers):
