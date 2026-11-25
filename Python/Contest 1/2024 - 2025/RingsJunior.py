@@ -12,40 +12,18 @@
 # 2. STRING tosses2
 #
 def score_tosses(tosses1, tosses2):
+    score1 = get_score(tosses1)
+    score2 = get_score(tosses2)
+    return f"{max(score1,score2)} {min(score1, score2)}"
 
-    score1 = get_score_from_string(tosses1)
-    score2 = get_score_from_string(tosses2)
+point_map = {
+    'A': 1, 'R': 1,
+    'O': 3, 'G': 3,
+    'B': 6
+}
 
-    if score1 >= score2:
-        result = str(score1) + " " + str(score2)
-    else:
-        result = str(score2) + " " + str(score1)
-
-    return result
-
-
-def get_score(toss):
-
-    score = 0
-
-    if toss == 'A' or toss == 'R':
-        score = 1
-    elif toss == 'O' or toss == 'G':
-        score = 3
-    elif toss == 'B':
-        score = 6
-
-    return score
-
-
-def get_score_from_string(tosses):
-
-    score = 0
-
-    for toss in tosses:
-        score += get_score(toss)
-
-    return score
+def get_score(tosses):
+    return sum(point_map.get(toss, 0) for toss in tosses)
 
 
 test_input = [

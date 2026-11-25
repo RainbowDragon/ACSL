@@ -11,54 +11,29 @@
 # 1. INTEGER numPlayers
 # 2. STRING_ARRAY tosses
 #
-def score_tosses(numPlayers, tosses):
-
+def score_tosses(num_players, tosses):
     scores = []
-
-    for i in range(numPlayers):
+    for i in range(num_players):
         toss_list = tosses[i].split(" ")
-        score = get_score_from_string(toss_list)
-        scores.append([i+1, len(toss_list), score])
-
+        scores.append([i+1, len(toss_list), get_score(toss_list)])
     scores.sort(key = lambda x: (-x[2], x[1]))
+    return " ".join(f"{player}-{score}" for player, _, score in scores)
 
-    sb = []
-    for i in range(numPlayers):
-        sb.append(str(scores[i][0]) + "-" + str(scores[i][2]))
+point_map = {
+    'A': 1, 'R': 1,
+    'O': 3, 'G': 3,
+    'B': 6
+}
 
-    return " ".join(sb)
-
-
-def get_score(toss):
-
+def get_score(toss_list):
     score = 0
-
-    if toss == 'A' or toss == 'R':
-        score = 1
-    elif toss == 'O' or toss == 'G':
-        score = 3
-    elif toss == 'B':
-        score = 6
-
-    return score
-
-
-def get_score_from_string(toss_list):
-
-    score = 0
-
     for toss in toss_list:
-        score += get_score(toss[0])
-
-        if len(toss) >= 2:
-            if toss[1] == '+':
-                score += 2
-            else:
-                score += get_score(toss[1]) + 1
-
-        if len(toss) == 3:
+        if toss.endswith('+'):
             score += 2
-
+            toss = toss.rstrip('+')
+        score += sum(point_map.get(c, 0) for c in toss)
+        if len(toss) == 2:
+            score += 1
     return score
 
 

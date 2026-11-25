@@ -13,42 +13,21 @@
 # 3. STRING tosses3
 #
 def score_tosses(tosses1, tosses2, tosses3):
+    scores = sorted((get_score(t) for t in (tosses1, tosses2, tosses3)), reverse=True)
+    return " ".join(map(str, scores))
 
-    scores = [
-        get_score_from_string(tosses1),
-        get_score_from_string(tosses2),
-        get_score_from_string(tosses3)
-    ]
+point_map = {
+    'A': 1, 'R': 1,
+    'O': 3, 'G': 3,
+    'B': 6
+}
 
-    scores.sort()
-
-    return str(scores[2]) + " " + str(scores[1]) + " " + str(scores[0])
-
-
-def get_score(toss):
-
+def get_score(tosses):
     score = 0
-
-    if toss == 'A' or toss == 'R':
-        score = 1
-    elif toss == 'O' or toss == 'G':
-        score = 3
-    elif toss == 'B':
-        score = 6
-
-    return score
-
-
-def get_score_from_string(tosses):
-
-    score = 0
-
-    toss_list = tosses.split(" ")
-    for toss in toss_list:
-        score += get_score(toss[0])
+    for toss in tosses.split():
+        score += sum(point_map.get(c, 0) for c in toss)
         if len(toss) == 2:
-            score += get_score(toss[1]) + 1
-
+            score += 1
     return score
 
 
