@@ -13,20 +13,15 @@
 # 3. INTEGER start
 #
 def find_digit_sum(num, base, start):
-
     result = 0
     start_value = int(str(start), base)
-
     for k in range(num):
         number = start_value + k
         digit_sum = 0
-
         while number > 0:
             digit_sum += number % base
             number //= base
-
         result += digit_sum
-
     return result
 
 

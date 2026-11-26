@@ -13,23 +13,18 @@
 #  3. STRING start
 #
 def find_mode_count(num, base, start):
-
     result = 0
     counts = [0] * base
     start_value = int(start, base)
-
     for k in range(num):
         number = start_value + k
-
         while number > 0:
             digit = number % base
             number //= base
             counts[digit] += 1
-
     for j in range(base):
         if counts[j] > result:
             result = counts[j]
-
     return result
 
 

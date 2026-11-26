@@ -13,23 +13,17 @@
 #  3. INTEGER start
 #
 def count_largest_digit(num, base, start):
-
     result = 0
     start_value = int(str(start), base)
     largest_digit = base - 1
-
     for k in range(num):
         number = start_value + k
         counter = 0
-
         while number > 0:
             if number % base == largest_digit:
                 counter += 1
-
             number //= base
-
         result += counter
-
     return result
 
 
