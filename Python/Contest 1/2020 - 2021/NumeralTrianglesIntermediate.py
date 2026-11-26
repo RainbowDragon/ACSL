@@ -13,43 +13,31 @@
 #  3. INTEGER r
 #
 def sum_of_last_row(s, d, r):
-
     result = 0
     numbers_to_skip = r * (r - 1) // 2
-
     start_number = oct_to_decimal(s)
     delta = oct_to_decimal(d)
     current_number = start_number + delta * numbers_to_skip
-
     for k in range(r):
         result += sum_of_oct_digit(current_number)
         current_number += delta
-
     return result
 
-
 def oct_to_decimal(oct_number):
-
     number = 0
     base = 1
-
     while oct_number > 0:
         digit = oct_number % 10
         number += digit * base
         base *= 8
-        oct_number //= 10
-
+        oct_number = oct_number // 10
     return number
 
-
 def sum_of_oct_digit(number):
-
     digit_sum = 0
-
     while number > 0:
         digit_sum += number % 8
-        number //= 8
-
+        number = number // 8
     return digit_sum
 
 

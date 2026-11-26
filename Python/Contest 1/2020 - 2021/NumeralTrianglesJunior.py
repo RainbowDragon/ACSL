@@ -13,33 +13,24 @@
 #  3. INTEGER r
 #
 def sum_of_last_row(s, d, r):
-
     result = 0
     numbers_to_skip = r * (r - 1) // 2
-
     current_number = transform_to_single_digit(s)
     for k in range(numbers_to_skip):
         current_number += d
         current_number = transform_to_single_digit(current_number)
-
     for k in range(r):
         result += transform_to_single_digit(current_number)
         current_number += d
-
     return result
 
-
 def transform_to_single_digit(number):
-
     while number > 9:
         digit_sum = 0
-
         while number > 0:
             digit_sum += number % 10
             number //= 10
-
         number = digit_sum
-
     return number
 
 

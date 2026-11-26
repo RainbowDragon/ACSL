@@ -13,35 +13,25 @@
 #  3. INTEGER r
 #
 def sum_of_last_row(s, d, r):
-
     result = 0
     numbers_to_skip = r * (r - 1) // 2
-
     start_number = int(s, 16)
     delta = int(d, 16)
     current_number = start_number + delta * numbers_to_skip
-
     for k in range(r):
         result += transform_to_single_hex_digit(current_number)
         current_number += delta
-
     result = transform_to_single_hex_digit(result)
     hex_digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
-
     return hex_digits[result]
 
-
 def transform_to_single_hex_digit(number):
-
     while number > 15:
         digit_sum = 0
-
         while number > 0:
             digit_sum += number % 16
             number //= 16
-
         number = digit_sum
-
     return number
 
 
