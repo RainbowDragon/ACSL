@@ -4,17 +4,14 @@
 #
 
 def transform_number(num, pos, delta):
-
     result = 0
-
     digits = [0] * 20
     index = 0
     while num > 0:
         digits[index] = num % 10
-        num //= 10
+        num = num // 10
         index += 1
-
-    pos -= 1
+    pos = pos - 1
     digit = digits[pos]
     if digit < 5:
         digit += delta
@@ -23,20 +20,15 @@ def transform_number(num, pos, delta):
         digit -= delta
         if digit < 0:
             digit *= -1
-
         while digit > 9:
             digit //= 10
-
     digits[pos] = digit
-
     for k in range(pos):
         digits[k] = 0
-
     base = 1
     for k in range(index):
         result += digits[k] * base
         base *= 10
-
     return result
 
 

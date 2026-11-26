@@ -4,17 +4,15 @@
 #
 
 def transform_number(num, pos):
-
     result = 0
     number_prime_factors = count_prime_factors(num)
     digits = [0] * 20
     index = 0
     while num > 0:
         digits[index] = num % 10
-        num //= 10
+        num = num // 10
         index += 1
-
-    pos -= 1
+    pos = pos - 1
     for k in range(index):
         if k > pos:
             digits[k] += digits[pos]
@@ -23,26 +21,20 @@ def transform_number(num, pos):
             if digits[k] < 0:
                 digits[k] *= -1
     digits[pos] = number_prime_factors
-
     base = 1
     for k in range(index):
         result += digits[k] * base
         base *= 10
         if digits[k] > 9:
             base *= 10
-
     return result
 
-
 def count_prime_factors(num):
-
     count = 0
-
     if num % 2 == 0:
         count += 1
         while num % 2 == 0:
             num //= 2
-
     factor = 3
     while factor * factor <= num:
         if num % factor == 0:
@@ -50,10 +42,8 @@ def count_prime_factors(num):
             while num % factor == 0:
                 num //= factor
         factor += 2
-
     if num > 2:
         count += 1
-
     return count
 
 
