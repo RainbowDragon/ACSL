@@ -15,30 +15,17 @@
 # 5. CHARACTER c5
 #
 def find_time(c1, c2, c3, c4, c5):
-
     hour = 0
     minute = 0
     colors = [c1, c2, c3, c4, c5]
     deltas = [1, 1, 2, 3, 5]
-
     for k in range(5):
         if colors[k] == 'R' or colors[k] == 'B':
             hour += deltas[k]
-
         if colors[k] == 'G' or colors[k] == 'B':
             minute += deltas[k]
-
     minute *= 5
-
-    str_hour = str(hour)
-    if hour < 10:
-        str_hour = "0" + str_hour
-
-    str_minute = str(minute)
-    if minute < 10:
-        str_minute = "0" + str_minute
-
-    return str_hour + ":" + str_minute
+    return f"{hour:02d}:{minute:02d}"
 
 
 test_input = [

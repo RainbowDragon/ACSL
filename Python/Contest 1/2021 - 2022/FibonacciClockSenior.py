@@ -10,48 +10,27 @@
 # The function accepts STRING cstr as parameter.
 #
 def find_time(cstr):
-
     hour = 0
     minute = 0
     second = 0
     deltas = [1, 1, 2, 3, 5]
-
     for k in range(5):
         if cstr[k] == 'R' or cstr[k] == 'Y' or cstr[k] == 'M':
             hour += deltas[k]
-
         if cstr[k] == 'G' or cstr[k] == 'Y' or cstr[k] == 'C':
             minute += deltas[k]
-
         if cstr[k] == 'B' or cstr[k] == 'M' or cstr[k] == 'C':
             second += deltas[k]
-
     minute *= 5
     second *= 5
-
     if second >= 60:
         minute += second // 60
         second %= 60
-
     if minute >= 60:
         hour += minute // 60
         minute %= 60
-
     hour %= 12
-
-    str_hour = str(hour)
-    if hour < 10:
-        str_hour = "0" + str_hour
-
-    str_minute = str(minute)
-    if minute < 10:
-        str_minute = "0" + str_minute
-
-    str_second = str(second)
-    if second < 10:
-        str_second = "0" + str_second
-
-    return str_hour + ":" + str_minute + ":" + str_second
+    return f"{hour:02d}:{minute:02d}:{second:02d}"
 
 
 test_input = [
