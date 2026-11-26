@@ -13,9 +13,9 @@
 #
 def score_tosses(num_players, tosses):
     scores = []
-    for i in range(num_players):
-        toss_list = tosses[i].split(" ")
-        scores.append([i+1, len(toss_list), get_score(toss_list)])
+    for k in range(num_players):
+        toss_list = tosses[k].split(" ")
+        scores.append([k+1, len(toss_list), get_score(toss_list)])
     scores.sort(key = lambda x: (-x[2], x[1]))
     return " ".join(f"{player}-{score}" for player, _, score in scores)
 
