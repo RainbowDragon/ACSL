@@ -13,34 +13,26 @@
 # 3. STRING drawPile
 #
 def find_hand_sum(original_rows, hand_tiles, draw_pile):
-
     rows = [0] * 4
     for j in reversed(range(4)):
         rows[j] = original_rows % 10
         original_rows = original_rows // 10
-
     tile_list = hand_tiles.split()
     hand_list = []
     for tile in tile_list:
         hand_list.append(int(tile))
-
     tile_list = draw_pile.split()
     draw_list = []
     for tile in tile_list:
         draw_list.append(int(tile))
-
     start_index = 0
     is_last_double = False
-
     while len(hand_list) != 0:
         is_matched = False
-
         for hand in hand_list:
             front = hand // 10
             back = hand % 10
-
             index = start_index
-
             if is_last_double:
                 if rows[index] == front:
                     is_matched = True
@@ -59,28 +51,23 @@ def find_hand_sum(original_rows, hand_tiles, draw_pile):
                         is_matched = True
                         rows[index] = front
                         break
-
             if is_matched:
                 is_last_double = (front == back)
                 if is_last_double:
                     start_index = index
                 else:
                     start_index = (index + 1) % 4
-
                 hand_list.remove(hand)
                 break
-
         if not is_matched:
             if len(draw_list) != 0:
                 hand_list.append(draw_list[0])
                 draw_list.pop(0)
             else:
                 break
-
     result = 0
     for hand in hand_list:
         result += (hand % 10) + (hand // 10)
-
     return result
 
 

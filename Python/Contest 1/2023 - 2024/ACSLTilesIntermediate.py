@@ -12,25 +12,20 @@
 # 2. STRING tiles
 #
 def find_discard_sum(original_rows, tiles):
-
     rows = [0] * 4
     for j in reversed(range(4)):
         rows[j] = original_rows % 10
         original_rows = original_rows // 10
-
     result = 0
     start_index = 0
     is_last_double = False
-
     tile_list = tiles.split()
     for tile in tile_list:
         cur = int(tile)
         front = cur // 10
         back = cur % 10
-
         is_matched = False
         index = start_index
-
         if is_last_double:
             if rows[index] == front:
                 is_matched = True
@@ -49,7 +44,6 @@ def find_discard_sum(original_rows, tiles):
                     is_matched = True
                     rows[index] = front
                     break
-
         if not is_matched:
             result += (front + back)
         else:
@@ -58,7 +52,6 @@ def find_discard_sum(original_rows, tiles):
                 start_index = index
             else:
                 start_index = (index + 1) % 4
-
     return result
 
 
