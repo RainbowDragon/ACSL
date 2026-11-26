@@ -16,7 +16,7 @@ def find_discard_sum(original_rows, tiles):
     rows = [0] * 4
     for j in reversed(range(4)):
         rows[j] = original_rows % 10
-        original_rows //= 10
+        original_rows = original_rows // 10
 
     result = 0
 

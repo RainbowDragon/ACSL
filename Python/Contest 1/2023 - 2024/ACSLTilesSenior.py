@@ -17,7 +17,7 @@ def find_hand_sum(original_rows, hand_tiles, draw_pile):
     rows = [0] * 4
     for j in reversed(range(4)):
         rows[j] = original_rows % 10
-        original_rows //= 10
+        original_rows = original_rows // 10
 
     tile_list = hand_tiles.split()
     hand_list = []
@@ -65,7 +65,7 @@ def find_hand_sum(original_rows, hand_tiles, draw_pile):
                 if is_last_double:
                     start_index = index
                 else:
-                    start_index = index + 1
+                    start_index = (index + 1) % 4
 
                 hand_list.remove(hand)
                 break
